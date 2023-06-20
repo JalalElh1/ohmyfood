@@ -10,7 +10,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  box-shadow: 0px 5px 5px lightgrey
+  box-shadow: 0px 5px 5px lightgrey;
 }
 .mainlogo {
   display: flex;
@@ -22,23 +22,26 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #eaeaea;
 }
 .intro {
   display: flex;
-  flex-wrap: wrap;
+  box-sizing: border-box;
+  flex-flow: wrap column;
   justify-content: center;
-  width: 50%;
-  padding-left: 275px;
+  background: linear-gradient(white, #eaeaea);
+  align-items: center;
 }
 
 .intro button {
   display: flex;
   flex-wrap: wrap;
-  height: 50px;
-  background-color: #ff79da;
-  align-items: center;
-  border-radius: 18px;
-  border: 0px;
+  color: white;
+  font-size: large;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 5px 5px 3px lightgrey;
+  background: linear-gradient(160deg, #ff79da, #9356dc);
 }
 .intro span {
   color: white;
