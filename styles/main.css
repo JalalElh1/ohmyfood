@@ -22,3 +22,10 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  padding-left: 275px;
+}
