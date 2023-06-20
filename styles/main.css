@@ -6,7 +6,18 @@ main {
   padding: 0;
 }
 
-header .mainlogo {
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mainlogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.location {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
