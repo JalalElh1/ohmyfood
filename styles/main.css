@@ -29,3 +29,16 @@ header {
   width: 50%;
   padding-left: 275px;
 }
+
+.intro button {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+  background-color: #ff79da;
+  align-items: center;
+  border-radius: 18px;
+  border: 0px;
+}
+.intro span {
+  color: white;
+}
