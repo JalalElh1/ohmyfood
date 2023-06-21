@@ -22,6 +22,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   background: linear-gradient(white, #eaeaea);
+  justify-content: space-evenly;
 }
 
 .location {
@@ -38,7 +39,6 @@ header {
   justify-content: center;
   background: linear-gradient(white, #eaeaea);
   align-items: center;
-  width: 50%;
 }
 
 .intro button {
@@ -61,8 +61,7 @@ header {
   align-items: center;
 }
 .restaurants {
-  width: 90vw;
-  padding-left: 30px;
+  width: 100vw;
 }
 
 .restaurantcards {
