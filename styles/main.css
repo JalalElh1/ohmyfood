@@ -18,12 +18,20 @@ header {
   justify-content: center;
 }
 
+.firstsection {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(white, #eaeaea);
+}
+
 .location {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #eaeaea;
 }
+
+
 .intro {
   display: flex;
   box-sizing: border-box;
@@ -31,6 +39,7 @@ header {
   justify-content: center;
   background: linear-gradient(white, #eaeaea);
   align-items: center;
+  width: 50%;
 }
 
 .intro button {
@@ -45,4 +54,9 @@ header {
 }
 .intro span {
   color: white;
+}
+
+.directionbutton {
+  display: flex;
+  flex-direction: row;
 }
