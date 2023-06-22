@@ -77,7 +77,10 @@ header {
   width: 25vw;
   border-radius: 30px;
 }
-
+.directionbutton span {
+  display: flex;
+  padding-left: 32px;
+}
 .stepnumber {
   display: flex;
   align-items: center;
@@ -85,6 +88,7 @@ header {
   width: 32px;
   border-radius: 50%;
   justify-content: center;
+  
 }
 .stepnumber span {
   padding: 5px;
