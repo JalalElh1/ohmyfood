@@ -87,6 +87,9 @@ header {
   border-radius: 50%;
   justify-content: center;
 }
+.stepnumber span {
+  padding: 5px;
+}
 
 .restaurants {
   padding: 15px;
