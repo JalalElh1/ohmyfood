@@ -93,9 +93,36 @@ header {
 
 .containertext {
   padding-left: 20px;
+  
 }
+.containertext h4 p {
+  text-decoration: none;
+}
+
 .heart {
   display: block;
   padding-right: 25px;
   font-size: xx-large;
+}
+
+.footer {
+  flex-direction: column;
+  padding: 50px 50px;
+  background: #353535;
+  display: flex;
+}
+
+.footertitle {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 16px;
+  width: 30vw;
+  justify-content: start;
+  text-decoration: none;
+}
+
+
+.footer h2 {
+  color: white;
 }
