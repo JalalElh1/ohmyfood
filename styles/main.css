@@ -21,7 +21,7 @@ header {
 
 .firstsection {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap column;
   background: linear-gradient(white, #eaeaea);
   justify-content: space-evenly;
 }
@@ -40,6 +40,7 @@ header {
   justify-content: center;
   background: linear-gradient(white, #eaeaea);
   align-items: center;
+  padding-bottom: 32px;
 }
 
 .intro button {
@@ -51,16 +52,42 @@ header {
   border-radius: 30px;
   box-shadow: 5px 5px 3px lightgrey;
   background: linear-gradient(160deg, #ff79da, #9356dc);
+  height: 48px;
+  align-items: center;
+  width: 20%;
+  justify-content: center;
 }
 .intro span {
   color: white;
 }
 
+.directions {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 2em;
+}
+
 .directionbutton {
+  height: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 25vw;
+  border-radius: 30px;
 }
+
+.stepnumber {
+  display: flex;
+  align-items: center;
+  background: #9356dc;
+  width: 32px;
+  border-radius: 50%;
+  justify-content: center;
+}
+
 .restaurants {
   padding: 15px;
   background: lightgrey;
@@ -68,7 +95,8 @@ header {
 
 .restaurantcards {
   display: flex;
-  flex-direction: column;
+  flex-flow: wrap row;
+  padding-bottom: 48px;
   gap: 3em;
 }
 
@@ -77,6 +105,7 @@ header {
   border-radius: 30px;
   color: inherit;
   overflow: hidden;
+  width: 45%;
 }
 
 .card img {
@@ -93,7 +122,6 @@ header {
 
 .containertext {
   padding-left: 20px;
-  
 }
 .containertext h4 p {
   text-decoration: none;
@@ -121,7 +149,6 @@ header {
   justify-content: start;
   text-decoration: none;
 }
-
 
 .footer h2 {
   color: white;
