@@ -21,7 +21,7 @@ header {
 
 .firstsection {
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: wrap row;
   background: linear-gradient(white, #eaeaea);
   justify-content: space-evenly;
 }
@@ -35,9 +35,9 @@ header {
 
 .intro {
   display: flex;
-  box-sizing: border-box;
+
   flex-flow: wrap column;
-  justify-content: center;
+  justify-content: space-evenly;
   background: linear-gradient(white, #eaeaea);
   align-items: center;
   padding-bottom: 32px;
@@ -74,7 +74,7 @@ header {
   flex-direction: row;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 25vw;
+  width: 450px;
   border-radius: 30px;
 }
 .directionbutton span {
@@ -85,10 +85,12 @@ header {
   display: flex;
   align-items: center;
   background: #9356dc;
-  width: 32px;
-  border-radius: 50%;
+  width: 39px;
+  height: 5%;
   justify-content: center;
-  
+  position: absolute;
+  right: 41em;
+  border-radius: 50%;
 }
 .stepnumber span {
   padding: 5px;
@@ -97,6 +99,9 @@ header {
 .restaurants {
   padding: 35px;
   background: lightgrey;
+  display: flex;
+  flex-flow: wrap column;
+  row-gap: 16px;
 }
 
 .restaurantcards {
@@ -111,7 +116,33 @@ header {
   border-radius: 30px;
   color: inherit;
   overflow: hidden;
-  /*width: 45%;*/
+  width: 45%;
+}
+
+.cardicon {
+  top: 43em;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  background: lightgreen;
+  color: darkgreen;
+  position: absolute;
+  left: 560px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardicontwo {
+  top: 43em;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  background: lightgreen;
+  color: darkgreen;
+  position: absolute;
+  right: 160px;
+  justify-content: center;
+  align-items: center;
 }
 
 .card img {
