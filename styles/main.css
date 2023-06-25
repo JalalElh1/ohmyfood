@@ -120,16 +120,16 @@ header {
 }
 
 .cardicon {
-  top: 43em;
   display: flex;
   width: 100px;
   height: 50px;
   background: #99e2d0;
   color: darkgreen;
   position: absolute;
-  left: 560px;
   justify-content: center;
   align-items: center;
+  right: 20px;
+  top: 15px;
 }
 
 .cardicontwo {
