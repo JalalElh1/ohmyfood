@@ -1,0 +1,9 @@
+@media only screen and (min-width: 767px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    background: #eaeaea;
+    width: 100%;
+  }
+}
