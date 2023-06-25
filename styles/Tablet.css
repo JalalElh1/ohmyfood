@@ -20,14 +20,5 @@
     width: 100vw;
   }
 
-  .stepnumber {
-    display: flex;
-    align-items: center;
-    background: #9356dc;
-    width: 32px;
-    border-radius: 50%;
-    justify-content: center;
-    position: absolute;
-    left: 20vw;
-  }
+  
 }

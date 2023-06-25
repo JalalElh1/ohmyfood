@@ -80,17 +80,20 @@ header {
 .directionbutton span {
   display: flex;
   padding-left: 32px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 .stepnumber {
   display: flex;
   align-items: center;
   background: #9356dc;
   width: 39px;
-  height: 5%;
+  height: 39px;
   justify-content: center;
-  position: absolute;
-  right: 41em;
+  position: relative;
   border-radius: 50%;
+  left: -10px;
 }
 .stepnumber span {
   padding: 5px;
@@ -175,6 +178,16 @@ header {
   padding: 50px 50px;
   background: #353535;
   display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 .footertitle {
