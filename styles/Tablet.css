@@ -1,11 +1,23 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .location {
+    min-height: 50px;
+    max-height: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro {
+    width: 100vw;
+    min-height: 300px;
+    max-height: 300px;
+  }
+
   .directionbutton {
     display: flex;
     height: 90px;
     flex-flow: wrap row;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 56vw;
+    width: 60vw;
     border-radius: 30px;
     justify-content: start;
   }
@@ -19,6 +31,4 @@
   .card a img {
     width: 100vw;
   }
-
-  
 }

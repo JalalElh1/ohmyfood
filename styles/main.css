@@ -54,6 +54,8 @@ header {
   height: 48px;
   align-items: center;
   justify-content: center;
+  min-width: 240px;
+  max-width: 240px;
 }
 .intro span {
   color: white;
@@ -82,6 +84,7 @@ header {
   gap: 20px;
   align-items: center;
   justify-content: center;
+  font-size: 30px;
 }
 .stepnumber {
   display: flex;
@@ -146,10 +149,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 90vw;
 }
 
 .containertext {
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 25px;
 }
 .containertext h4 p {
   text-decoration: none;
@@ -166,6 +176,8 @@ header {
   padding: 50px 50px;
   background: #353535;
   display: flex;
+  min-height: 220px;
+  max-height: 220px;
 }
 
 h1,
@@ -186,6 +198,8 @@ p {
   width: 30vw;
   justify-content: start;
   text-decoration: none;
+  min-height: 40px;
+  max-height: 40px;
 }
 
 .footer h2 {
