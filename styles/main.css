@@ -102,12 +102,16 @@ header {
 }
 
 .restaurants {
-  background: lightgrey;
+  background: #f6f6f6;
   display: flex;
   flex-flow: wrap column;
   row-gap: 16px;
+  padding-top: 10px;
 }
 
+.restauranttitle {
+  padding-left: 10px;
+}
 .restaurantcards {
   display: flex;
   flex-flow: wrap row;
@@ -115,6 +119,7 @@ header {
   gap: 3em;
   padding-left: 15px;
   padding-right: 15px;
+  box-shadow: 4px 4px 4px lightgrey;
 }
 
 .card {
@@ -167,8 +172,11 @@ header {
 
 .heart {
   display: block;
-  padding-right: 25px;
   font-size: 50px;
+}
+
+.fa-heart:hover {
+  background: linear-gradient(160deg, #ff79da, #9356dc);
 }
 
 .footer {

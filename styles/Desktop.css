@@ -1,9 +1,31 @@
 @media only screen and (min-width: 992px) {
-    .imgcontainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 45vw;
-    
-    }
+  .imgcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .location {
+    min-height: 75px;
+    max-height: 75px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location h3 {
+    font-size: 35px;
+  }
+
+  .firstsection {
+    width: 100%;
+
+  }
+  .intro {
+    width: 50%;
+  }
+
+  .directions { 
+    width: 50%;
+  }
 }
