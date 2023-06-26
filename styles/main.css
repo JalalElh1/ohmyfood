@@ -35,7 +35,6 @@ header {
 
 .intro {
   display: flex;
-
   flex-flow: wrap column;
   justify-content: space-evenly;
   background: linear-gradient(white, #eaeaea);
@@ -100,7 +99,6 @@ header {
 }
 
 .restaurants {
-  padding: 35px;
   background: lightgrey;
   display: flex;
   flex-flow: wrap column;
@@ -112,6 +110,8 @@ header {
   flex-flow: wrap row;
   padding-bottom: 48px;
   gap: 3em;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .card {
@@ -120,32 +120,20 @@ header {
   color: inherit;
   overflow: hidden;
   width: 45%;
+  position: relative;
 }
 
 .cardicon {
   display: flex;
-  width: 100px;
-  height: 50px;
+  width: 80px;
+  height: 40px;
   background: #99e2d0;
   color: darkgreen;
   position: absolute;
   justify-content: center;
   align-items: center;
-  right: 20px;
+  right: 15px;
   top: 15px;
-}
-
-.cardicontwo {
-  top: 43em;
-  display: flex;
-  width: 100px;
-  height: 50px;
-  background: #99e2d0;
-  color: darkgreen;
-  position: absolute;
-  right: 160px;
-  justify-content: center;
-  align-items: center;
 }
 
 .card img {
