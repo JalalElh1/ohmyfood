@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #eaeaea;
+  background: #f6f6f6;
 }
 
 main {
@@ -81,7 +81,7 @@ p {
 
 .sectionpage {
   padding: 15px;
-  background: #eaeaea;
+  /*background: #eaeaea;*/
   border-radius: 8%;
   margin-top: 20vh;
 }
@@ -103,7 +103,7 @@ p {
   display: flex;
   flex-flow: wrap row;
   gap: 32px;
-  background: #eaeaea;
+  /*background: #eaeaea;*/
   width: 100%;
 }
 
@@ -139,4 +139,34 @@ p {
 
 .card-price {
   padding-right: 15px;
+}
+
+.material-icon {
+  color: white;
+}
+
+.orderbttn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  max-height: 150px;
+  width: 100%;
+}
+
+.searchbar_button {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: large;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 5px 5px 3px lightgrey;
+  background: linear-gradient(160deg, #ff79da, #9356dc);
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  min-width: 240px;
+  max-width: 240px;
 }
