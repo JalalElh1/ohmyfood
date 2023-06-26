@@ -10,14 +10,21 @@
     min-height: 300px;
     max-height: 300px;
   }
-
+  .directions {
+    width: 100%;
+  }
+  .intro h2,
+  h4 {
+    min-height: 40px;
+    max-height: 40px;
+  }
   .directionbutton {
     display: flex;
     height: 90px;
     flex-flow: wrap row;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 60vw;
+    width: 70%;
     border-radius: 30px;
     justify-content: start;
   }
