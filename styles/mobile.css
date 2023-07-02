@@ -4,6 +4,7 @@
   }
   .directionbutton {
     width: 90%;
+    max-width: 300px;
   }
 
   .location {

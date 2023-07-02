@@ -42,7 +42,6 @@ p {
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
-  margin: 10px;
 }
 
 .mainlogo {
@@ -84,7 +83,6 @@ p {
   background: #f6f6f6;
   border-top-right-radius: 5%;
   border-top-left-radius: 5%;
-  margin-top: 20vh;
 }
 
 .name {
