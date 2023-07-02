@@ -106,7 +106,7 @@ header {
   display: flex;
   flex-flow: wrap column;
   row-gap: 16px;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 .restauranttitle {
@@ -203,7 +203,7 @@ p {
   color: white;
   align-items: center;
   gap: 16px;
-  width: 30vw;
+  width: 60vw;
   justify-content: start;
   text-decoration: none;
   min-height: 40px;

@@ -81,8 +81,9 @@ p {
 
 .sectionpage {
   padding: 15px;
-  /*background: #eaeaea;*/
-  border-radius: 8%;
+  background: #f6f6f6;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
   margin-top: 20vh;
 }
 
