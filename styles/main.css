@@ -81,6 +81,10 @@ header {
   border-radius: 30px;
   font-size: large;
 }
+.directionbutton:hover {
+  background: rgb(217 164 240 / 44%);
+}
+
 .directionbutton span {
   display: flex;
   gap: 20px;
@@ -156,7 +160,10 @@ header {
   justify-content: space-between;
   width: 100%;
 }
-
+.card a {
+  text-decoration: none;
+  font-size: 50px;
+}
 .containertext {
   padding-left: 20px;
   display: flex;
@@ -176,6 +183,10 @@ header {
 
 .fa-heart:hover {
   background: linear-gradient(160deg, #ff79da, #9356dc);
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
 }
 
 .footer {
