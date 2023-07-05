@@ -147,7 +147,9 @@ header {
   right: 15px;
   top: 15px;
 }
-
+.searchbar_button a {
+  text-decoration: none;
+}
 .card img {
   object-fit: cover;
   width: 100%;
