@@ -1,8 +1,9 @@
-
+$font-familyone: 'Roboto', sans-serif;
+$font-familytwo: 'Shrikhand', cursive;
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-$font-stack: 'shrikhand', 'roboto';
+$font-stack: 'shrikhand';
 $maingradient: linear-Gradient(160deg, $primary-color, $secondary-color);
 
 // --------------------------------------------------------------------------------------------//
@@ -14,7 +15,9 @@ $maingradient: linear-Gradient(160deg, $primary-color, $secondary-color);
     a {
         text-decoration: none;
     }
-    
+    h4 {
+        font-family: $font-familyone;
+    }
 }
 
 // --------------------------------------------------------------------------------------------//
@@ -86,7 +89,7 @@ header {
     border: 0;
     border-radius: 30px;
     box-shadow: 5px 5px 3px lightgrey;
-    background: linear-gradient(160deg, $maingradient);
+    background: $maingradient;
     height: 48px;
     align-items: center;
     justify-content: center;
@@ -157,7 +160,10 @@ header {
     row-gap: 16px;
 
     h2 {
+        font-family: $font-familyone;
         padding-left: 10px;
+        font-size: 30px;
+        padding-top: 10px;
     }
     
 }
@@ -187,6 +193,18 @@ header {
     display: flex;
     flex-wrap: wrap;
     }
+    .cardicon {
+        display: flex;
+        width: 80px;
+        height: 40px;
+        background:$tertiary-color;
+        color: darkgreen;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        right: 15px;
+        top: 15px;
+        }
     }
     
     a img {
@@ -216,7 +234,7 @@ header {
     gap: 1em;
     justify-content: center;
     align-items: flex-start;
-    font-size: small;
+    font-size: 20px;
     }
 
     .heart {
@@ -227,23 +245,9 @@ header {
                 color: $maingradient
             }
         } 
-       
-        
     
     }
 
-    .cardicon {
-    display: flex;
-    width: 80px;
-    height: 40px;
-    background:$tertiary-color;
-    color: darkgreen;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    right: 15px;
-    top: 15px;
-    }
 }
 
 // --------------------------------------------------------------------------------------------//
