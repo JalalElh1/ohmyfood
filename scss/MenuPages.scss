@@ -1,166 +1,171 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
 $background: #f6f6f6;
-$font-stack: 'shrikhand', 'roboto';
+$font-stack: "shrikhand", "roboto";
 $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
 
 // --------------------------------------------------------------------------------------------//
 // Body Styling //
 
 * {
-    margin: 0;
-    
+  margin: 0;
 }
 
 // --------------------------------------------------------------------------------------------//
 // MAIN STYLING  //
 
-.restaurantpic {
-    position: absolute;
-    z-index: 0;
-    height: 45vh;
-    width: 100%;
+.menucard {
+  margin-bottom: 1px;
+  $var: 5;
 
-    img{ 
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      border: #{$var}px solid orange;
+      $var: $var + 1;
+      animation-name: disqappear;
+      animation-direction: reverse;
+      animation-delay: #{$var}s;
+    }
+  }
+}
+
+.restaurantpic {
+  position: absolute;
+  z-index: 0;
+  height: 45vh;
+  width: 100%;
+
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    }
+  }
 }
 
 .sectionpage {
+  padding: 15px;
+  background: #f6f6f6;
+  border-radius: 50px;
+  position: relative;
+  top: 250px;
 
-    padding: 15px;
-    background: #f6f6f6;
-    border-radius: 50px;
-    position: relative;
-    top: 250px;
+  .name {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
 
-    .name {
-        display: flex;
-        flex-flow: wrap row;
-        justify-content: space-between;
-        width: 100%;
-        min-height: 60px;
-
-        h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-
-        .heartbtn {
-        min-height: 100%;
-        max-height: 100%;
-        display: flex;
-        width: 50px;
-        font-size: 24px;
-        align-items: center;
-        justify-content: center;
-        }
-
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .menu {
-        display: flex;
-        flex-flow: wrap row;
-        gap: 32px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-            .menuoptions {
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-            flex-direction: column;
-            width: 100%;
-            h3{ 
-                position: relative;
-                z-index: 1;
-            }
-            @media only screen and (min-width: 767px) {
-                display: flex;
-                gap: 16px;
-                flex-wrap: wrap;
-                flex-direction: column;
-                width: 30%;
-            }
-
-            .menucard {
-                display: flex;
-                flex-wrap: wrap;
-                background: white;
-                border-radius: 10px;
-                box-shadow: 0px 1px 15px lightgrey;
-                flex-direction: column;
-                align-items: start;
-                cursor: pointer;
-                min-height: 75px;
-                max-height: 75px;
-                justify-content: space-around;
-                padding-left: 10px;
-                h3, .cardtext, .card-ingredients, .card-price { 
-                    background: white;
-                }
-
-                    .cardtext {
-                        display: flex;
-                        gap: 48px;
-                        width: 100%;
-                        justify-content: space-between;
-                        .card-price{
-                        padding-right: 15px;
-                        }
-                    }
-            }
-            .underline {
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
-                position: relative;
-                bottom: 27px;
-                color: #99e2d0;
-                z-index: 0;
-            }
-        
-
-            }
-
+    .heartbtn {
+      min-height: 100%;
+      max-height: 100%;
+      display: flex;
+      width: 50px;
+      font-size: 24px;
+      align-items: center;
+      justify-content: center;
     }
-    
-    .orderbttn {
+  }
+
+  .menu {
+    display: flex;
+    flex-flow: wrap row;
+    gap: 32px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .menuoptions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      h3 {
+        position: relative;
+        z-index: 1;
+      }
+      @media only screen and (min-width: 767px) {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 30%;
+      }
+
+      .menucard {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        min-height: 150px;
-        max-height: 150px;
-        width: 100%;
-            .Orderbtn {
-                display: flex;
-                flex-wrap: wrap;
-                color: white;
-                font-size: large;
-                border: 0;
-                border-radius: 30px;
-                box-shadow: 5px 5px 3px lightgrey;
-                background: $maingradient;
-                height: 48px;
-                align-items: center;
-                justify-content: center;
-                min-width: 240px;
-                max-width: 240px;
-                    .materialicon {
-                        color: white;
-                    }
-            }
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 1px 15px lightgrey;
+        flex-direction: column;
+        align-items: start;
+        cursor: pointer;
+        min-height: 75px;
+        max-height: 75px;
+        justify-content: space-around;
+        padding-left: 10px;
+        h3,
+        .cardtext,
+        .card-ingredients,
+        .card-price {
+          background: white;
+        }
+
+        .cardtext {
+          display: flex;
+          gap: 48px;
+          width: 100%;
+          justify-content: space-between;
+          .card-price {
+            padding-right: 15px;
+          }
+        }
+      }
+      .underline {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        bottom: 27px;
+        color: #99e2d0;
+        z-index: 0;
+      }
     }
-    
+  }
 
-
+  .orderbttn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    max-height: 150px;
+    width: 100%;
+    .Orderbtn {
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      font-size: large;
+      border: 0;
+      border-radius: 30px;
+      box-shadow: 5px 5px 3px lightgrey;
+      background: $maingradient;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      min-width: 240px;
+      max-width: 240px;
+      .materialicon {
+        color: white;
+      }
+    }
+  }
 }
-
-
-
-
