@@ -19,6 +19,12 @@ header .mainlogo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
+header .mainlogo span {
+  display: flex;
+  align-items: center;
 }
 
 .loader {
@@ -114,7 +120,7 @@ header {
   border: 0;
   border-radius: 30px;
   box-shadow: 5px 5px 3px lightgrey;
-  background: linear-Gradient(160deg, #9356dc, #ff79da);
+  background: linear-Gradient(160deg, #ff79da, #9356dc);
   height: 48px;
   align-items: center;
   justify-content: center;
@@ -125,7 +131,7 @@ header {
   color: white;
 }
 .firstsection .directions {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -156,7 +162,7 @@ header {
     max-width: 300px;
   }
   .firstsection .directions .directionbutton:hover {
-    color: #9356dc 44%;
+    color: #ff79da 44%;
   }
 }
 .firstsection .directions .directionbutton .stepnumber {
@@ -272,7 +278,7 @@ header {
   display: block;
 }
 .imgcontainer .heart .fa-regular::after {
-  color: linear-Gradient(160deg, #9356dc, #ff79da);
+  color: linear-Gradient(160deg, #ff79da, #9356dc);
 }
 
 .footer {
