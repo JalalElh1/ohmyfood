@@ -71,6 +71,8 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
+  font-size: 12px;
+  gap: 16px;
 }
 @media only screen and (max-width: 767px) {
   .location {
@@ -79,6 +81,9 @@ header {
     justify-content: center;
     align-items: center;
   }
+}
+.location .fa-solid {
+  font-size: 20px;
 }
 
 .firstsection {
@@ -105,7 +110,6 @@ header {
 .firstsection .intro button {
   display: flex;
   flex-wrap: wrap;
-  color: white;
   font-size: large;
   border: 0;
   border-radius: 30px;
@@ -117,12 +121,17 @@ header {
   min-width: 240px;
   max-width: 240px;
 }
+.firstsection .xplor-bttn {
+  color: white;
+}
 .firstsection .directions {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding-bottom: 32px;
+  background: white;
+  padding-left: 20px;
 }
 @media only screen and (max-width: 767px) {
   .firstsection .directions {
@@ -139,6 +148,7 @@ header {
   width: 40vw;
   border-radius: 30px;
   font-size: large;
+  background: #f6f6f6;
 }
 @media only screen and (max-width: 767px) {
   .firstsection .directions .directionbutton {
@@ -187,7 +197,6 @@ header {
   gap: 3em;
   padding-left: 15px;
   padding-right: 15px;
-  box-shadow: 4px 4px 4px lightgrey;
 }
 .restaurantcards .card {
   background: white;
@@ -196,6 +205,7 @@ header {
   overflow: hidden;
   width: 45%;
   position: relative;
+  box-shadow: 4px 4px 4px lightgrey;
 }
 @media only screen and (max-width: 767px) {
   .restaurantcards .card {
@@ -212,8 +222,8 @@ header {
 }
 .restaurantcards .card .cardicon {
   display: flex;
-  width: 80px;
-  height: 40px;
+  width: 95px;
+  height: 35px;
   background: #99e2d0;
   color: darkgreen;
   position: absolute;
@@ -239,6 +249,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  color: black;
 }
 @media only screen and (min-width: 992px) {
   .imgcontainer {
