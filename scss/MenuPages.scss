@@ -47,7 +47,7 @@ $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
 
   @for $i from 1 through 5 {
     &:nth-child(#{$i}) {
-      border: #{$var}px solid orange;
+      border: #{$var}px solid white;
       $var: $var + 1;
       animation-name: disqappear;
       animation-direction: reverse;
