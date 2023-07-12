@@ -13,6 +13,32 @@ $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
 }
 
 // --------------------------------------------------------------------------------------------//
+// HEADER STYLING  //
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .mainlogo {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+
+    .span {
+      position: relative;
+      left: 70px;
+    }
+    a {
+      position: relative;
+      left: -5px;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------//
 // MAIN STYLING  //
 
 .menucard {
@@ -126,6 +152,23 @@ $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
           justify-content: space-between;
           .card-price {
             padding-right: 15px;
+          }
+        }
+
+        .cardtick {
+          position: absolute;
+          font-size: 30px;
+          background-color: #99e2d0;
+          color: white;
+          right: 0;
+          padding: 20px 22px;
+          transition: 0.5ms ease-in-out;
+          i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 40px;
+            transform: rotate(360deg);
           }
         }
       }

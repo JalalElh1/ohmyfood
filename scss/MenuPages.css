@@ -2,6 +2,27 @@
   margin: 0;
 }
 
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header .mainlogo {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+}
+.header .mainlogo .span {
+  position: relative;
+  left: 70px;
+}
+.header .mainlogo a {
+  position: relative;
+  left: -5px;
+}
+
 .menucard {
   margin-bottom: 1px;
 }
@@ -133,6 +154,22 @@
 }
 .sectionpage .menu .menuoptions .menucard .cardtext .card-price {
   padding-right: 15px;
+}
+.sectionpage .menu .menuoptions .menucard .cardtick {
+  position: absolute;
+  font-size: 30px;
+  background-color: #99e2d0;
+  color: white;
+  right: 0;
+  padding: 20px 22px;
+  transition: 0.5ms ease-in-out;
+}
+.sectionpage .menu .menuoptions .menucard .cardtick i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  transform: rotate(360deg);
 }
 .sectionpage .menu .menuoptions .underline {
   display: flex;
