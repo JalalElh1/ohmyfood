@@ -224,10 +224,10 @@ main {
 .sectionpage .menu .menuoptions .menucard .cardtext .card-price {
   padding-right: 15px;
 }
-.sectionpage .menu .menuoptions .menucard:hover .cardtick {
+.sectionpage .menu .menuoptions .menucard:target .cardtick {
   animation: slideLeft 1s forwards;
 }
-.sectionpage .menu .menuoptions .menucard:hover .cardtext {
+.sectionpage .menu .menuoptions .menucard:target .cardtext {
   animation: shrinkWidth 1s forwards;
 }
 .sectionpage .menu .menuoptions .menucard .cardtick {

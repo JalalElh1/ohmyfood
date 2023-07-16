@@ -184,7 +184,7 @@ main {
           }
         }
 
-        &:hover {
+        &:target {
           & .cardtick {
             animation: slideLeft 1s forwards;
           }
