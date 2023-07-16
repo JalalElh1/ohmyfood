@@ -155,7 +155,7 @@ $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
           }
         }
 
-        .cardtick {
+        .cardtick:hover {
           background: #99e2d0;
           cursor: pointer;
           height: auto;
@@ -168,7 +168,7 @@ $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
           transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
             opacity 0.4s ease-in-out;
 
-          span {
+          i {
             font-size: 3rem;
             color: white;
             transform: rotate(360deg);
