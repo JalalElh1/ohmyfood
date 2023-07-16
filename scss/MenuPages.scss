@@ -41,16 +41,25 @@ $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
 // --------------------------------------------------------------------------------------------//
 // MAIN STYLING  //
 
+main,
+footer,
+header {
+  animation: none;
+}
+
 .menucard {
   margin-bottom: 1px;
-  $var: 5;
+  $var: 1;
+  overflow: hidden;
+  opacity: 0;
 
-  @for $i from 1 through 5 {
+  @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
-      border: #{$var}px solid white;
-      $var: $var + 1;
-      animation-name: disqappear;
+      $var: $var + 0.25;
+      animation-name: disappear;
       animation-direction: reverse;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in;
       animation-delay: #{$var}s;
     }
   }
@@ -68,13 +77,33 @@ $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
     object-fit: cover;
   }
 }
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes shrinkWidth {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 83%;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
 
 .sectionpage {
   padding: 15px;
   background: #f6f6f6;
   border-radius: 50px;
   position: relative;
-  top: 250px;
+  margin-top: 250px;
 
   .name {
     display: flex;
@@ -146,33 +175,42 @@ $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
         }
 
         .cardtext {
+          width: 100%;
           display: flex;
           gap: 48px;
-          width: 100%;
           justify-content: space-between;
           .card-price {
             padding-right: 15px;
           }
         }
 
-        .cardtick:hover {
+        &:hover {
+          & .cardtick {
+            animation: slideLeft 1s forwards;
+          }
+          & .cardtext {
+            animation: shrinkWidth 1s forwards;
+          }
+        }
+
+        .cardtick {
           background: #99e2d0;
           cursor: pointer;
+          transform: translateX(100%);
           height: auto;
-          width: 0;
-          opacity: 0;
-          border-radius: 0 15px 15px 0;
+          width: 30px;
+          opacity: 1;
           display: flex;
           align-items: center;
           justify-content: center;
-          transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
-            opacity 0.4s ease-in-out;
+          width: 75px;
+          min-height: 75px;
 
           i {
-            font-size: 3rem;
             color: white;
             transform: rotate(360deg);
             transition: 0.4s ease-in-out;
+            font-size: 26px;
           }
         }
       }

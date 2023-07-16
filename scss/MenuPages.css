@@ -23,38 +23,86 @@
   left: -5px;
 }
 
+main,
+footer,
+header {
+  animation: none;
+}
+
 .menucard {
   margin-bottom: 1px;
+  overflow: hidden;
+  opacity: 0;
 }
 .menucard:nth-child(1) {
-  border: 5px solid white;
-  animation-name: disqappear;
+  animation-name: disappear;
   animation-direction: reverse;
-  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 1.25s;
 }
 .menucard:nth-child(2) {
-  border: 6px solid white;
-  animation-name: disqappear;
+  animation-name: disappear;
   animation-direction: reverse;
-  animation-delay: 7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 1.5s;
 }
 .menucard:nth-child(3) {
-  border: 7px solid white;
-  animation-name: disqappear;
+  animation-name: disappear;
   animation-direction: reverse;
-  animation-delay: 8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 1.75s;
 }
 .menucard:nth-child(4) {
-  border: 8px solid white;
-  animation-name: disqappear;
+  animation-name: disappear;
   animation-direction: reverse;
-  animation-delay: 9s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
 }
 .menucard:nth-child(5) {
-  border: 9px solid white;
-  animation-name: disqappear;
+  animation-name: disappear;
   animation-direction: reverse;
-  animation-delay: 10s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 2.25s;
+}
+.menucard:nth-child(6) {
+  animation-name: disappear;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 2.5s;
+}
+.menucard:nth-child(7) {
+  animation-name: disappear;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 2.75s;
+}
+.menucard:nth-child(8) {
+  animation-name: disappear;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
+}
+.menucard:nth-child(9) {
+  animation-name: disappear;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 3.25s;
+}
+.menucard:nth-child(10) {
+  animation-name: disappear;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 3.5s;
 }
 
 .restaurantpic {
@@ -70,12 +118,33 @@
      object-fit: cover;
 }
 
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes shrinkWidth {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 83%;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .sectionpage {
   padding: 15px;
   background: #f6f6f6;
   border-radius: 50px;
   position: relative;
-  top: 250px;
+  margin-top: 250px;
 }
 .sectionpage .name {
   display: flex;
@@ -147,31 +216,38 @@
   background: white;
 }
 .sectionpage .menu .menuoptions .menucard .cardtext {
+  width: 100%;
   display: flex;
   gap: 48px;
-  width: 100%;
   justify-content: space-between;
 }
 .sectionpage .menu .menuoptions .menucard .cardtext .card-price {
   padding-right: 15px;
 }
-.sectionpage .menu .menuoptions .menucard .cardtick:hover {
+.sectionpage .menu .menuoptions .menucard:hover .cardtick {
+  animation: slideLeft 1s forwards;
+}
+.sectionpage .menu .menuoptions .menucard:hover .cardtext {
+  animation: shrinkWidth 1s forwards;
+}
+.sectionpage .menu .menuoptions .menucard .cardtick {
   background: #99e2d0;
   cursor: pointer;
+  transform: translateX(100%);
   height: auto;
-  width: 0;
-  opacity: 0;
-  border-radius: 0 15px 15px 0;
+  width: 30px;
+  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  width: 75px;
+  min-height: 75px;
 }
-.sectionpage .menu .menuoptions .menucard .cardtick:hover i {
-  font-size: 3rem;
+.sectionpage .menu .menuoptions .menucard .cardtick i {
   color: white;
   transform: rotate(360deg);
   transition: 0.4s ease-in-out;
+  font-size: 26px;
 }
 .sectionpage .menu .menuoptions .underline {
   display: flex;

@@ -57,6 +57,10 @@ header {
   animation-fill-mode: forwards;
 }
 
+.loader::after {
+  @include visuallyHidden;
+}
+
 @mixin visuallyHidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -83,12 +87,20 @@ header {
 }
 
 @keyframes disappear {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
     opacity: 0;
-    @include visuallyHidden;
   }
 }
 

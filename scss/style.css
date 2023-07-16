@@ -54,19 +54,20 @@ header {
   }
 }
 @keyframes disappear {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
     opacity: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-            clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
   }
 }
 .location {
