@@ -27,31 +27,31 @@
   margin-bottom: 1px;
 }
 .menucard:nth-child(1) {
-  border: 5px solid orange;
+  border: 5px solid white;
   animation-name: disqappear;
   animation-direction: reverse;
   animation-delay: 6s;
 }
 .menucard:nth-child(2) {
-  border: 6px solid orange;
+  border: 6px solid white;
   animation-name: disqappear;
   animation-direction: reverse;
   animation-delay: 7s;
 }
 .menucard:nth-child(3) {
-  border: 7px solid orange;
+  border: 7px solid white;
   animation-name: disqappear;
   animation-direction: reverse;
   animation-delay: 8s;
 }
 .menucard:nth-child(4) {
-  border: 8px solid orange;
+  border: 8px solid white;
   animation-name: disqappear;
   animation-direction: reverse;
   animation-delay: 9s;
 }
 .menucard:nth-child(5) {
-  border: 9px solid orange;
+  border: 9px solid white;
   animation-name: disqappear;
   animation-direction: reverse;
   animation-delay: 10s;
@@ -155,21 +155,23 @@
 .sectionpage .menu .menuoptions .menucard .cardtext .card-price {
   padding-right: 15px;
 }
-.sectionpage .menu .menuoptions .menucard .cardtick {
-  position: absolute;
-  font-size: 30px;
-  background-color: #99e2d0;
-  color: white;
-  right: 0;
-  padding: 20px 22px;
-  transition: 0.5ms ease-in-out;
-}
-.sectionpage .menu .menuoptions .menucard .cardtick i {
+.sectionpage .menu .menuoptions .menucard .cardtick:hover {
+  background: #99e2d0;
+  cursor: pointer;
+  height: auto;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 15px 15px 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-width: 40px;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+.sectionpage .menu .menuoptions .menucard .cardtick:hover i {
+  font-size: 3rem;
+  color: white;
   transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
 }
 .sectionpage .menu .menuoptions .underline {
   display: flex;

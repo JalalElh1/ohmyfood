@@ -289,7 +289,7 @@ header {
   font-size: 30px;
   padding-right: 15px;
 }
-.imgcontainer .heart .fa-regular::after {
+.imgcontainer .heart i:hover {
   color: linear-Gradient(160deg, #ff79da, #9356dc);
 }
 
