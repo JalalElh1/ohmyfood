@@ -156,19 +156,23 @@ $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
         }
 
         .cardtick {
-          position: absolute;
-          font-size: 30px;
-          background-color: #99e2d0;
-          color: white;
-          right: 0;
-          padding: 20px 22px;
-          transition: 0.5ms ease-in-out;
-          i {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-width: 40px;
+          background: #99e2d0;
+          cursor: pointer;
+          height: auto;
+          width: 0;
+          opacity: 0;
+          border-radius: 0 15px 15px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
+            opacity 0.4s ease-in-out;
+
+          span {
+            font-size: 3rem;
+            color: white;
             transform: rotate(360deg);
+            transition: 0.4s ease-in-out;
           }
         }
       }

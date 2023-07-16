@@ -314,10 +314,8 @@ header {
     font-size: 30px;
     padding-right: 15px;
 
-    .fa-regular {
-      &::after {
-        color: $maingradient;
-      }
+    i:hover {
+      color: $maingradient;
     }
   }
 }
@@ -333,7 +331,6 @@ header {
   max-height: 220px;
   padding-top: 4%;
   padding-left: 4%;
- 
 
   h2 {
     color: white;
