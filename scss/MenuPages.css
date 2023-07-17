@@ -294,11 +294,10 @@ main {
   justify-content: center;
   min-width: 240px;
   max-width: 240px;
-  cursor: pointer;
 }
 .sectionpage .orderbttn .Orderbtn:hover {
-  background: #f0e4ff;
-  box-shadow: 5px 5px 5px darkgrey;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .sectionpage .orderbttn .Orderbtn .materialicon {
   color: white;

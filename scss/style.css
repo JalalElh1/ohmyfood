@@ -146,6 +146,10 @@ header {
   min-width: 240px;
   max-width: 240px;
 }
+.firstsection button:hover {
+  box-shadow: 15px 15px 15px lightgrey;
+  cursor: pointer;
+}
 
 .xplor-bttn {
   color: white;
@@ -184,11 +188,6 @@ header {
   border-radius: 30px;
   font-size: large;
   background: #f6f6f6;
-  cursor: pointer;
-}
-.directions .directionbutton:hover {
-  background: #f0e4ff;
-  box-shadow: 5px 5px 5px darkgrey;
 }
 @media only screen and (max-width: 767px) {
   .directions .directionbutton {
