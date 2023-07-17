@@ -140,8 +140,6 @@ main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       align-items: baseline;
-
-      
     }
     .menuoptions {
       display: flex;
@@ -255,6 +253,11 @@ main {
       justify-content: center;
       min-width: 240px;
       max-width: 240px;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
       .materialicon {
         color: white;
       }

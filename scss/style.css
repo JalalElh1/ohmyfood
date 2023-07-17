@@ -139,6 +139,10 @@ header {
   min-width: 240px;
   max-width: 240px;
 }
+.firstsection .intro button:hover {
+  box-shadow: 15px 15px 15px lightgrey;
+  cursor: pointer;
+}
 .firstsection .xplor-bttn {
   color: white;
 }
@@ -175,15 +179,16 @@ header {
   border-radius: 30px;
   font-size: large;
   background: #f6f6f6;
+  cursor: pointer;
+}
+.firstsection .directions .directionbutton:hover {
+  background: #f0e4ff;
+  box-shadow: 5px 5px 5px darkgrey;
 }
 @media only screen and (max-width: 767px) {
   .firstsection .directions .directionbutton {
     width: 90%;
     max-width: 95%;
-  }
-  .firstsection .directions .directionbutton:hover {
-    background: #f0e4ff;
-    box-shadow: 5px 5px 5px darkgrey;
   }
 }
 .firstsection .directions .directionbutton .stepnumber {

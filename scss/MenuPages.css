@@ -289,6 +289,10 @@ main {
   min-width: 240px;
   max-width: 240px;
 }
+.sectionpage .orderbttn .Orderbtn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .sectionpage .orderbttn .Orderbtn .materialicon {
   color: white;
 }/*# sourceMappingURL=MenuPages.css.map */
