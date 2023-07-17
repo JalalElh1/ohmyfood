@@ -208,13 +208,16 @@ header {
       @media only screen and (max-width: 767px) {
         width: 90%;
         max-width: 95%;
+        .directionbutton.btnclr {
+          background: #f0e4ff;
+        }
         :hover {
           color: $secondary-color 44%;
         }
       }
       cursor: pointer;
 
-      .btnclr {
+      .directionbutton.btnclr {
         background: #f0e4ff;
       }
 

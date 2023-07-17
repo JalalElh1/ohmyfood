@@ -182,11 +182,14 @@ header {
     width: 90%;
     max-width: 95%;
   }
+  .firstsection .directions .directionbutton .directionbutton.btnclr {
+    background: #f0e4ff;
+  }
   .firstsection .directions .directionbutton :hover {
     color: #9356dc 44%;
   }
 }
-.firstsection .directions .directionbutton .btnclr {
+.firstsection .directions .directionbutton .directionbutton.btnclr {
   background: #f0e4ff;
 }
 .firstsection .directions .directionbutton .stepnumber {
