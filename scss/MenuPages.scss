@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 $background: #f6f6f6;
-$font-stack: "shrikhand", "roboto";
+$font-familyone: "Roboto";
+$font-familytwo: "Shrikhand";
 $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
 
 // --------------------------------------------------------------------------------------------//
@@ -10,6 +13,10 @@ $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
 
 * {
   margin: 0;
+
+  p {
+    font-family: $font-familyone;
+  }
 }
 
 // --------------------------------------------------------------------------------------------//
@@ -79,10 +86,10 @@ header {
 }
 @keyframes slideLeft {
   from {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
 }
 @keyframes shrinkWidth {
@@ -90,7 +97,7 @@ header {
     width: 100%;
   }
   to {
-    width: 83%;
+    width: 75%;
   }
 }
 main {
@@ -140,8 +147,6 @@ main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       align-items: baseline;
-
-      
     }
     .menuoptions {
       display: flex;
@@ -152,6 +157,7 @@ main {
       h3 {
         position: relative;
         z-index: 1;
+        font-family: $font-familyone;
       }
       @media only screen and (min-width: 767px) {
         display: flex;
@@ -179,6 +185,7 @@ main {
         .card-ingredients,
         .card-price {
           background: white;
+          font-family: $font-familyone;
         }
 
         .cardtext {
@@ -193,10 +200,10 @@ main {
 
         &:hover {
           & .cardtick {
-            animation: slideLeft 1s forwards;
+            animation: slideLeft 5s ease-in;
           }
           & .cardtext {
-            animation: shrinkWidth 1s forwards;
+            animation: shrinkWidth 2s forwards;
           }
         }
 
@@ -216,7 +223,7 @@ main {
           i {
             color: white;
             transform: rotate(360deg);
-            transition: 0.4s ease-in-out;
+            transition: 0.2s ease-in;
             font-size: 26px;
           }
         }
@@ -255,6 +262,11 @@ main {
       justify-content: center;
       min-width: 240px;
       max-width: 240px;
+      cursor: pointer;
+      &:hover {
+        background: #f0e4ff;
+        box-shadow: 5px 5px 5px darkgrey;
+      }
       .materialicon {
         color: white;
       }
