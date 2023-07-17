@@ -57,9 +57,6 @@ header {
   animation-fill-mode: forwards;
 }
 
-.loader::after {
-  @include visuallyHidden;
-}
 
 @mixin visuallyHidden {
   clip: rect(0 0 0 0);
@@ -70,6 +67,10 @@ header {
   white-space: nowrap;
   width: 1px;
 }
+.loader::after {
+  @include visuallyHidden;
+}
+
 
 main,
 footer,
@@ -181,10 +182,7 @@ header {
     padding-bottom: 32px;
     background: white;
     padding-left: 20px;
-    cursor: pointer;
-    .btnclr {
-      background-color: #f0e4ff;
-    }
+
     @media only screen and (max-width: 767px) {
       width: 100%;
       padding-top: 20px;
@@ -206,12 +204,18 @@ header {
       border-radius: 30px;
       font-size: large;
       background: #f6f6f6;
+
       @media only screen and (max-width: 767px) {
         width: 90%;
         max-width: 95%;
         :hover {
           color: $secondary-color 44%;
         }
+      }
+      cursor: pointer;
+
+      .btnclr {
+        background: #f0e4ff;
       }
 
       .stepnumber {

@@ -39,6 +39,17 @@ header .mainlogo span {
   animation-fill-mode: forwards;
 }
 
+.loader::after {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 main,
 footer,
 header {
@@ -164,15 +175,19 @@ header {
   border-radius: 30px;
   font-size: large;
   background: #f6f6f6;
+  cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
   .firstsection .directions .directionbutton {
     width: 90%;
-    max-width: 80%;
+    max-width: 95%;
   }
   .firstsection .directions .directionbutton :hover {
     color: #9356dc 44%;
   }
+}
+.firstsection .directions .directionbutton .btnclr {
+  background: #f0e4ff;
 }
 .firstsection .directions .directionbutton .stepnumber {
   display: flex;
@@ -290,8 +305,8 @@ header {
   font-size: 30px;
   padding-right: 15px;
 }
-.imgcontainer .heart i:hover {
-  color: linear-Gradient(160deg, #ff79da, #9356dc);
+.imgcontainer .heart i:target {
+  color: green;
 }
 
 .footer {
