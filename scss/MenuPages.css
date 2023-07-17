@@ -175,6 +175,13 @@ main {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (min-width: 767px) {
+  .sectionpage .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: baseline;
+  }
+}
 .sectionpage .menu .menuoptions {
   display: flex;
   gap: 16px;
@@ -192,7 +199,7 @@ main {
     gap: 16px;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 30%;
+    width: 100%;
   }
 }
 .sectionpage .menu .menuoptions .menucard {
@@ -224,10 +231,10 @@ main {
 .sectionpage .menu .menuoptions .menucard .cardtext .card-price {
   padding-right: 15px;
 }
-.sectionpage .menu .menuoptions .menucard:target .cardtick {
+.sectionpage .menu .menuoptions .menucard:hover .cardtick {
   animation: slideLeft 1s forwards;
 }
-.sectionpage .menu .menuoptions .menucard:target .cardtext {
+.sectionpage .menu .menuoptions .menucard:hover .cardtext {
   animation: shrinkWidth 1s forwards;
 }
 .sectionpage .menu .menuoptions .menucard .cardtick {

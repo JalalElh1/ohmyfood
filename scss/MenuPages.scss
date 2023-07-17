@@ -136,6 +136,13 @@ main {
     width: 100%;
     align-items: center;
     justify-content: center;
+    @media only screen and (min-width: 767px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: baseline;
+
+      
+    }
     .menuoptions {
       display: flex;
       gap: 16px;
@@ -151,7 +158,7 @@ main {
         gap: 16px;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 30%;
+        width: 100%;
       }
 
       .menucard {
@@ -184,7 +191,7 @@ main {
           }
         }
 
-        &:target {
+        &:hover {
           & .cardtick {
             animation: slideLeft 1s forwards;
           }

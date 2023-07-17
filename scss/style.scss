@@ -181,6 +181,10 @@ header {
     padding-bottom: 32px;
     background: white;
     padding-left: 20px;
+    cursor: pointer;
+    .btnclr {
+      background-color: #f0e4ff;
+    }
     @media only screen and (max-width: 767px) {
       width: 100%;
       padding-top: 20px;
@@ -204,7 +208,7 @@ header {
       background: #f6f6f6;
       @media only screen and (max-width: 767px) {
         width: 90%;
-        max-width: 80%;
+        max-width: 95%;
         :hover {
           color: $secondary-color 44%;
         }
@@ -326,8 +330,8 @@ header {
     font-size: 30px;
     padding-right: 15px;
 
-    i:hover {
-      color: $maingradient;
+    i:target {
+      color: green;
     }
   }
 }
