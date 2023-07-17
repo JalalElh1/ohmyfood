@@ -175,22 +175,16 @@ header {
   border-radius: 30px;
   font-size: large;
   background: #f6f6f6;
-  cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
   .firstsection .directions .directionbutton {
     width: 90%;
     max-width: 95%;
   }
-  .firstsection .directions .directionbutton .directionbutton.btnclr {
+  .firstsection .directions .directionbutton:hover {
     background: #f0e4ff;
+    box-shadow: 5px 5px 5px darkgrey;
   }
-  .firstsection .directions .directionbutton :hover {
-    color: #9356dc 44%;
-  }
-}
-.firstsection .directions .directionbutton .directionbutton.btnclr {
-  background: #f0e4ff;
 }
 .firstsection .directions .directionbutton .stepnumber {
   display: flex;
@@ -239,6 +233,10 @@ header {
   width: 47%;
   position: relative;
   box-shadow: 4px 4px 4px lightgrey;
+}
+.restaurantcards .card:hover {
+  box-shadow: 10px 10px 10px lightgrey;
+  cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
   .restaurantcards .card {

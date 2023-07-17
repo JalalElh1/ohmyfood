@@ -57,7 +57,6 @@ header {
   animation-fill-mode: forwards;
 }
 
-
 @mixin visuallyHidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -70,7 +69,6 @@ header {
 .loader::after {
   @include visuallyHidden;
 }
-
 
 main,
 footer,
@@ -208,17 +206,11 @@ header {
       @media only screen and (max-width: 767px) {
         width: 90%;
         max-width: 95%;
-        .directionbutton.btnclr {
-          background: #f0e4ff;
-        }
-        :hover {
-          color: $secondary-color 44%;
-        }
-      }
-      cursor: pointer;
 
-      .directionbutton.btnclr {
-        background: #f0e4ff;
+        &:hover {
+          background: #f0e4ff;
+          box-shadow: 5px 5px 5px darkgrey;
+        }
       }
 
       .stepnumber {
@@ -275,6 +267,11 @@ header {
     width: 47%;
     position: relative;
     box-shadow: 4px 4px 4px lightgrey;
+    &:hover {
+      box-shadow: 10px 10px 10px lightgrey;
+      cursor: pointer;
+    }
+
     @media only screen and (max-width: 767px) {
       width: 100%;
     }
