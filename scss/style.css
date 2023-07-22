@@ -139,7 +139,7 @@ header {
   border: 0;
   border-radius: 30px;
   box-shadow: 5px 5px 3px lightgrey;
-  background: linear-Gradient(160deg, #ff79da, #9356dc);
+  background: linear-gradient(to right, #ff79da, #9356dc);
   height: 48px;
   align-items: center;
   justify-content: center;
@@ -189,14 +189,14 @@ header {
   font-size: large;
   background: #f6f6f6;
 }
+.directions .directionbutton:hover {
+  background: #f0e4ff;
+  box-shadow: 5px 5px 5px darkgrey;
+}
 @media only screen and (max-width: 767px) {
   .directions .directionbutton {
     width: 90%;
     max-width: 95%;
-  }
-  .directions .directionbutton:hover {
-    background: #f0e4ff;
-    box-shadow: 5px 5px 5px darkgrey;
   }
 }
 .directions .directionbutton .stepnumber {
@@ -251,6 +251,15 @@ header {
   box-shadow: 10px 10px 10px lightgrey;
   cursor: pointer;
 }
+.restaurantcards .card .cardbox {
+  display: flex;
+  flex-flow: wrap column;
+}
+.restaurantcards .card .cardbox img {
+  height: 192px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media only screen and (max-width: 767px) {
   .restaurantcards .card {
     width: 100%;
@@ -258,7 +267,7 @@ header {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .restaurantcards .card {
-    height: 292px;
+    height: 275px;
     width: 44vw;
     display: flex;
     flex-wrap: wrap;
@@ -322,8 +331,11 @@ header {
   font-size: 30px;
   padding-right: 15px;
 }
-.imgcontainer .heart i:target {
-  color: green;
+.imgcontainer .heart .fa-regular {
+  font-size: xx-large;
+  position: relative;
+  bottom: 10px;
+  cursor: pointer;
 }
 
 .footer {

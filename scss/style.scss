@@ -6,10 +6,10 @@ $primary-color: #ff79da;
 $secondary-color: #9356dc;
 $tertiary-color: #99e2d0;
 $maingradient: linear-Gradient(160deg, $primary-color, $secondary-color);
+$mixedcolor: linear-gradient(to right, #ff79da, #9356dc);
 
 // --------------------------------------------------------------------------------------------//
 // Body Styling //
-
 * {
   margin: 0;
   a {
@@ -161,27 +161,26 @@ header {
     }
   }
 
-    button {
-      display: flex;
-      flex-wrap: wrap;
-      font-size: large;
-      border: 0;
-      border-radius: 30px;
-      box-shadow: 5px 5px 3px lightgrey;
-      background: $maingradient;
-      height: 48px;
-      align-items: center;
-      justify-content: center;
-      min-width: 240px;
-      max-width: 240px;
+  button {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 5px 5px 3px lightgrey;
+    background: $mixedcolor;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    min-width: 240px;
+    max-width: 240px;
 
-      &:hover {
-        box-shadow: 15px 15px 15px lightgrey;
-        cursor: pointer;
-      }
-    
+    &:hover {
+      box-shadow: 15px 15px 15px lightgrey;
+      cursor: pointer;
     }
   }
+}
 
 .xplor-bttn {
   color: white;
@@ -207,26 +206,25 @@ header {
     padding-top: 20px;
   }
 
-    .directionbutton {
-      height: 80px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      width: 40vw;
-      border-radius: 30px;
-      font-size: large;
-      background: #f6f6f6;
+  .directionbutton {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 40vw;
+    border-radius: 30px;
+    font-size: large;
+    background: #f6f6f6;
+    &:hover {
+      background: #f0e4ff;
+      box-shadow: 5px 5px 5px darkgrey;
+    }
 
-      @media only screen and (max-width: 767px) {
-        width: 90%;
-        max-width: 95%;
-
-        &:hover {
-          background: #f0e4ff;
-          box-shadow: 5px 5px 5px darkgrey;
-        }
-      }
+    @media only screen and (max-width: 767px) {
+      width: 90%;
+      max-width: 95%;
+    }
 
     .stepnumber {
       display: flex;
@@ -286,11 +284,21 @@ header {
       cursor: pointer;
     }
 
+    .cardbox {
+      display: flex;
+      flex-flow: wrap column;
+
+      img {
+        height: 192px;
+        object-fit: cover;
+      }
+    }
+
     @media only screen and (max-width: 767px) {
       width: 100%;
     }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
-      height: 292px;
+      height: 275px;
       width: 44vw;
       display: flex;
       flex-wrap: wrap;
@@ -326,6 +334,7 @@ header {
   width: 100%;
   color: black;
   padding-bottom: 15px;
+
   @media only screen and (min-width: 992px) {
     display: flex;
     align-items: center;
@@ -351,8 +360,11 @@ header {
     font-size: 30px;
     padding-right: 15px;
 
-    i:target {
-      color: green;
+    .fa-regular {
+      font-size: xx-large;
+      position: relative;
+      bottom: 10px;
+      cursor: pointer;
     }
   }
 }
