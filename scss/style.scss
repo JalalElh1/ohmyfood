@@ -216,15 +216,15 @@ header {
   }
 }
 
-.heart-svg {
+/*.heart-svg {
   fill: transparent;
   stroke: black;
   stroke-width: 50;
-  /* border: 1px solid black; */
+   border: 1px solid black;
   &:active {
     fill: $maingradient;
-  }
-}
+  } */
+
 
 .xplor-bttn {
   color: white;

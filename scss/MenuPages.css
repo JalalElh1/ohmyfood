@@ -25,6 +25,13 @@
 .header .mainlogo a {
   position: relative;
   left: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .mainlogo a i {
+  position: relative;
+  right: 40px;
 }
 
 main,
@@ -251,7 +258,7 @@ main {
   padding-right: 15px;
 }
 .sectionpage .menu .menuoptions .menucard:hover .cardtick, .sectionpage .menu .menuoptions .menucard:active .cardtick {
-  animation: slideLeft 5s ease-in forwards;
+  animation: slideLeft 4s ease-in forwards;
 }
 .sectionpage .menu .menuoptions .menucard:hover .cardtext, .sectionpage .menu .menuoptions .menucard:active .cardtext {
   animation: shrinkWidth 2s backwards;
@@ -314,4 +321,38 @@ main {
 }
 .sectionpage .orderbttn .Orderbtn .materialicon {
   color: white;
+}
+.sectionpage .heartcolor {
+  font-weight: 100;
+}
+.sectionpage .heartcolor:active {
+  font-weight: 900;
+  background-image: linear-Gradient(160deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fillUp 0.7s drop;
+}
+@keyframes fillUp {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.7), translateY(10px);
+  }
+  75% {
+    transform: scale(1.4), translateY(-10px);
+  }
+  80% {
+    transform: scale(1), translateY(10px);
+  }
+  85% {
+    transform: scale(1.2), translateY(20px);
+  }
+  90% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=MenuPages.css.map */

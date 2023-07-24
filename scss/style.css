@@ -184,16 +184,14 @@ header {
     transform: translateY(0);
   }
 }
-.heart-svg {
+/*.heart-svg {
   fill: transparent;
   stroke: black;
   stroke-width: 50;
-  /* border: 1px solid black; */
-}
-.heart-svg:active {
-  fill: linear-Gradient(160deg, #ff79da, #9356dc);
-}
-
+   border: 1px solid black;
+  &:active {
+    fill: $maingradient;
+  } */
 .xplor-bttn {
   color: white;
 }

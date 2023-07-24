@@ -41,6 +41,14 @@ $maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
     a {
       position: relative;
       left: -5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        position: relative;
+        right: 40px;
+      }
     }
   }
 }
@@ -211,7 +219,7 @@ main {
         &:hover,
         &:active {
           & .cardtick {
-            animation: slideLeft 5s ease-in forwards;
+            animation: slideLeft 4s ease-in forwards;
           }
           & .cardtext {
             animation: shrinkWidth 2s backwards;
@@ -281,6 +289,41 @@ main {
       .materialicon {
         color: white;
       }
+    }
+  }
+  .heartcolor {
+    font-weight: 100;
+    &:active {
+      font-weight: 900;
+      background-image: $maingradient;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fillUp 0.7s drop;
+    }
+  }
+
+  @keyframes fillUp {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(0.7), translateY(10px);
+    }
+    75% {
+      transform: scale(1.4), translateY(-10px);
+    }
+    80% {
+      transform: scale(1), translateY(10px);
+    }
+    85% {
+      transform: scale(1.2), translateY(20px);
+    }
+    90% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
     }
   }
 }
