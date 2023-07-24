@@ -146,6 +146,7 @@ header {
     background: linear-gradient(white, #eaeaea);
     align-items: center;
     padding-bottom: 32px;
+    font-family: $font-familyone;
 
     @media only screen and (max-width: 767px) {
       min-height: 250px;
@@ -161,7 +162,7 @@ header {
     }
   }
 
-  button {
+  .searchbar_button {
     display: flex;
     flex-wrap: wrap;
     font-size: large;
@@ -179,6 +180,49 @@ header {
       box-shadow: 15px 15px 15px lightgrey;
       cursor: pointer;
     }
+  }
+}
+
+.heartcolor {
+  font-weight: 100;
+  &:active {
+    font-weight: 900;
+    background-image: $maingradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fillUp 0.7s ease-in forwards;
+  }
+}
+
+@keyframes fillUp {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.4);
+  }
+  80% {
+    transform: scale(1), translateY(-10px);
+  }
+  85% {
+    transform: translateY(20px);
+  }
+  90% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.heart-svg {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 50;
+  /* border: 1px solid black; */
+  &:active {
+    fill: $maingradient;
   }
 }
 
@@ -220,6 +264,9 @@ header {
       background: #f0e4ff;
       box-shadow: 5px 5px 5px darkgrey;
     }
+    img :hover {
+      color: #f0e4ff;
+    }
 
     @media only screen and (max-width: 767px) {
       width: 90%;
@@ -236,6 +283,10 @@ header {
       position: relative;
       border-radius: 50%;
       left: -10px;
+      color: white;
+      i {
+        color: purple;
+      }
     }
     span {
       display: flex;
@@ -287,6 +338,7 @@ header {
     .cardbox {
       display: flex;
       flex-flow: wrap column;
+      width: 100%;
 
       img {
         height: 192px;
@@ -334,12 +386,14 @@ header {
   width: 100%;
   color: black;
   padding-bottom: 15px;
+  padding-top: 15px;
 
   @media only screen and (min-width: 992px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: auto;
+    width: 100%;
+    padding-top: 10px;
   }
   .containertext {
     padding-left: 20px;
@@ -350,7 +404,7 @@ header {
     align-items: flex-start;
     font-size: 20px;
     h4 {
-      font-family: $font-familytwo;
+      font-family: $font-familyone;
     }
   }
 
@@ -381,8 +435,13 @@ header {
   padding-top: 4%;
   padding-left: 4%;
 
+  p {
+    font-family: $font-familyone;
+  }
+
   h2 {
     color: white;
+    font-family: $font-familytwo;
   }
 
   .footertitle {

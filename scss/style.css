@@ -118,6 +118,7 @@ header {
   background: linear-gradient(white, #eaeaea);
   align-items: center;
   padding-bottom: 32px;
+  font-family: "Roboto";
 }
 @media only screen and (max-width: 767px) {
   .firstsection .intro {
@@ -132,7 +133,7 @@ header {
     text-align: center;
   }
 }
-.firstsection button {
+.firstsection .searchbar_button {
   display: flex;
   flex-wrap: wrap;
   font-size: large;
@@ -146,9 +147,51 @@ header {
   min-width: 240px;
   max-width: 240px;
 }
-.firstsection button:hover {
+.firstsection .searchbar_button:hover {
   box-shadow: 15px 15px 15px lightgrey;
   cursor: pointer;
+}
+
+.heartcolor {
+  font-weight: 100;
+}
+.heartcolor:active {
+  font-weight: 900;
+  background-image: linear-Gradient(160deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fillUp 0.7s ease-in forwards;
+}
+
+@keyframes fillUp {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.4);
+  }
+  80% {
+    transform: scale(1), translateY(-10px);
+  }
+  85% {
+    transform: translateY(20px);
+  }
+  90% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.heart-svg {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 50;
+  /* border: 1px solid black; */
+}
+.heart-svg:active {
+  fill: linear-Gradient(160deg, #ff79da, #9356dc);
 }
 
 .xplor-bttn {
@@ -193,6 +236,9 @@ header {
   background: #f0e4ff;
   box-shadow: 5px 5px 5px darkgrey;
 }
+.directions .directionbutton img :hover {
+  color: #f0e4ff;
+}
 @media only screen and (max-width: 767px) {
   .directions .directionbutton {
     width: 90%;
@@ -209,6 +255,10 @@ header {
   position: relative;
   border-radius: 50%;
   left: -10px;
+  color: white;
+}
+.directions .directionbutton .stepnumber i {
+  color: purple;
 }
 .directions .directionbutton span {
   display: flex;
@@ -254,6 +304,7 @@ header {
 .restaurantcards .card .cardbox {
   display: flex;
   flex-flow: wrap column;
+  width: 100%;
 }
 .restaurantcards .card .cardbox img {
   height: 192px;
@@ -304,13 +355,15 @@ header {
   width: 100%;
   color: black;
   padding-bottom: 15px;
+  padding-top: 15px;
 }
 @media only screen and (min-width: 992px) {
   .imgcontainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: auto;
+    width: 100%;
+    padding-top: 10px;
   }
 }
 .imgcontainer .containertext {
@@ -323,7 +376,7 @@ header {
   font-size: 20px;
 }
 .imgcontainer .containertext h4 {
-  font-family: "Shrikhand";
+  font-family: "Roboto";
 }
 .imgcontainer .heart {
   display: block;
@@ -347,8 +400,12 @@ header {
   padding-top: 4%;
   padding-left: 4%;
 }
+.footer p {
+  font-family: "Roboto";
+}
 .footer h2 {
   color: white;
+  font-family: "Shrikhand";
 }
 .footer .footertitle {
   display: flex;

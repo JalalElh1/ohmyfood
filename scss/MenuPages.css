@@ -37,6 +37,8 @@ header {
   margin-bottom: 1px;
   overflow: hidden;
   opacity: 0;
+  min-width: 356px;
+  max-width: 356px;
 }
 .menucard:nth-child(1) {
   animation-name: disappear;
@@ -248,11 +250,11 @@ main {
 .sectionpage .menu .menuoptions .menucard .cardtext .card-price {
   padding-right: 15px;
 }
-.sectionpage .menu .menuoptions .menucard:hover .cardtick {
-  animation: slideLeft 5s ease-in;
+.sectionpage .menu .menuoptions .menucard:hover .cardtick, .sectionpage .menu .menuoptions .menucard:active .cardtick {
+  animation: slideLeft 5s ease-in forwards;
 }
-.sectionpage .menu .menuoptions .menucard:hover .cardtext {
-  animation: shrinkWidth 2s forwards;
+.sectionpage .menu .menuoptions .menucard:hover .cardtext, .sectionpage .menu .menuoptions .menucard:active .cardtext {
+  animation: shrinkWidth 2s backwards;
 }
 .sectionpage .menu .menuoptions .menucard .cardtick {
   background: #99e2d0;
@@ -263,13 +265,14 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 65px;
   min-height: 90px;
 }
 .sectionpage .menu .menuoptions .menucard .cardtick i {
   color: white;
   transform: rotate(360deg);
-  transition: 0.2s ease-in-out;
+  transition-delay: 1s;
+  transition: 0.2s ease-in-out forwards;
   font-size: 26px;
 }
 .sectionpage .menu .menuoptions .underline {

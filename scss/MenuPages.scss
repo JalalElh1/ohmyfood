@@ -59,6 +59,8 @@ header {
   $var: 1;
   overflow: hidden;
   opacity: 0;
+  min-width: 356px;
+  max-width: 356px;
 
   @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
@@ -206,12 +208,13 @@ main {
           }
         }
 
-        &:hover {
+        &:hover,
+        &:active {
           & .cardtick {
-            animation: slideLeft 5s ease-in;
+            animation: slideLeft 5s ease-in forwards;
           }
           & .cardtext {
-            animation: shrinkWidth 2s forwards;
+            animation: shrinkWidth 2s backwards;
           }
         }
 
@@ -224,13 +227,14 @@ main {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 100px;
+          width: 65px;
           min-height: 90px;
 
           i {
             color: white;
             transform: rotate(360deg);
-            transition: 0.2s ease-in-out;
+            transition-delay: 1s;
+            transition: 0.2s ease-in-out forwards;
             font-size: 26px;
           }
         }
