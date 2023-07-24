@@ -67,8 +67,8 @@ header {
   $var: 1;
   overflow: hidden;
   opacity: 0;
-  min-width: 356px;
-  max-width: 356px;
+  min-width: 335px;
+  max-width: 335px;
 
   @for $i from 1 through 10 {
     &:nth-child(#{$i}) {

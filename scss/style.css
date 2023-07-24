@@ -234,7 +234,7 @@ header {
   background: #f0e4ff;
   box-shadow: 5px 5px 5px darkgrey;
 }
-.directions .directionbutton img :hover {
+.directions .directionbutton i :hover {
   color: #f0e4ff;
 }
 @media only screen and (max-width: 767px) {

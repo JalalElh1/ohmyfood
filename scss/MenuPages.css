@@ -44,8 +44,8 @@ header {
   margin-bottom: 1px;
   overflow: hidden;
   opacity: 0;
-  min-width: 356px;
-  max-width: 356px;
+  min-width: 335px;
+  max-width: 335px;
 }
 .menucard:nth-child(1) {
   animation-name: disappear;
