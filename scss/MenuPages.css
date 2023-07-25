@@ -51,70 +51,70 @@ header {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: 2s ease-in;
   animation-delay: 1.25s;
 }
 .menucard:nth-child(2) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: 2s ease-in;
   animation-delay: 1.5s;
 }
 .menucard:nth-child(3) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: 2s ease-in;
   animation-delay: 1.75s;
 }
 .menucard:nth-child(4) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: 2s ease-in;
   animation-delay: 2s;
 }
 .menucard:nth-child(5) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: 2s ease-in;
   animation-delay: 2.25s;
 }
 .menucard:nth-child(6) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: 2s ease-in;
   animation-delay: 2.5s;
 }
 .menucard:nth-child(7) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: 2s ease-in;
   animation-delay: 2.75s;
 }
 .menucard:nth-child(8) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: 2s ease-in;
   animation-delay: 3s;
 }
 .menucard:nth-child(9) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: 2s ease-in;
   animation-delay: 3.25s;
 }
 .menucard:nth-child(10) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: 2s ease-in;
   animation-delay: 3.5s;
 }
 
@@ -222,7 +222,7 @@ main {
   .sectionpage .menu .menuoptions {
     display: flex;
     flex-flow: wrap column;
-    width: 60%;
+    width: 46%;
   }
 }
 .sectionpage .menu .menuoptions .menucard {

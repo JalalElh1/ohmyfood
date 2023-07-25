@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 * p {
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
 }
 
 header {
@@ -118,7 +118,7 @@ header {
   background: linear-gradient(white, #eaeaea);
   align-items: center;
   padding-bottom: 32px;
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
 }
 @media only screen and (max-width: 767px) {
   .firstsection .intro {
@@ -161,7 +161,7 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fillUp 2s ease-in forwards;
+  animation: fillUp 1s ease-in forwards;
 }
 
 @keyframes fillUp {
@@ -265,7 +265,7 @@ header {
   align-items: center;
   justify-content: start;
   width: 100%;
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
   font-weight: 500;
 }
 
@@ -276,7 +276,7 @@ header {
   row-gap: 16px;
 }
 .restaurants h2 {
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
   padding-left: 10px;
   font-size: 30px;
   padding-top: 40px;
@@ -378,7 +378,7 @@ header {
   font-size: 20px;
 }
 .imgcontainer .containertext h4 {
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
 }
 .imgcontainer .heart {
   display: block;
@@ -403,7 +403,7 @@ header {
   padding-left: 4%;
 }
 .footer p {
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
 }
 .footer p:hover {
   text-decoration: underline;

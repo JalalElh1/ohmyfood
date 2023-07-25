@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 
-$font-familyone: "Roboto";
+$font-familyone: "Roboto", "sans-serif";
 $font-familytwo: "Shrikhand", "curasive";
 $primary-color: #ff79da;
 $secondary-color: #9356dc;
@@ -191,7 +191,7 @@ header {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: fillUp 2s ease-in forwards;
+    animation: fillUp 1s ease-in forwards;
   }
 }
 
