@@ -219,6 +219,10 @@ header {
 .directions h2 {
   padding-top: 20px;
 }
+.directions .directionbutton span:hover .fa-solid {
+  color: #9356dc;
+  transform: scale(1.3);
+}
 .directions .directionbutton {
   height: 80px;
   display: flex;
@@ -255,14 +259,14 @@ header {
   left: -10px;
   color: white;
 }
-.directions .directionbutton .stepnumber i {
-  color: purple;
-}
 .directions .directionbutton span {
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  width: 100%;
+  font-family: "Roboto";
+  font-weight: 500;
 }
 
 .restaurants {

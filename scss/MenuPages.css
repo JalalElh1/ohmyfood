@@ -260,11 +260,10 @@ main {
 .sectionpage .menu .menuoptions .menucard .cardtext .card-price {
   padding-right: 15px;
 }
-.sectionpage .menu .menuoptions .menucard:hover .cardtick, .sectionpage .menu .menuoptions .menucard:active .cardtick {
+.sectionpage .menu .menuoptions .menucard:active .cardtick {
   animation: slideLeft 4s ease-in forwards;
 }
-.sectionpage .menu .menuoptions .menucard:hover .cardtext,
-.sectionpage .menu .menuoptions .menucard:hover h3, .sectionpage .menu .menuoptions .menucard:active .cardtext,
+.sectionpage .menu .menuoptions .menucard:active .cardtext,
 .sectionpage .menu .menuoptions .menucard:active h3 {
   animation: shrinkWidth 2s backwards;
 }

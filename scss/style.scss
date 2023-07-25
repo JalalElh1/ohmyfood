@@ -250,6 +250,15 @@ header {
   }
 
   .directionbutton {
+    span:hover {
+      .fa-solid {
+        color: #9356dc;
+        transform: scale(1.3);
+      }
+    }
+  }
+
+  .directionbutton {
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -283,18 +292,17 @@ header {
       border-radius: 50%;
       left: -10px;
       color: white;
-      i {
-        color: purple;
-      }
     }
     span {
       display: flex;
       gap: 20px;
       align-items: center;
-      justify-content: center;
+      justify-content: start;
+      width: 100%;
+      font-family: $font-familyone;
+      font-weight: 500;
     }
   }
-
 }
 
 // --------------------------------------------------------------------------------------------//
