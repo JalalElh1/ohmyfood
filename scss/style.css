@@ -161,7 +161,7 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fillUp 0.7s ease-in forwards;
+  animation: fillUp 2s ease-in forwards;
 }
 
 @keyframes fillUp {
@@ -401,9 +401,12 @@ header {
 .footer p {
   font-family: "Roboto";
 }
+.footer p:hover {
+  text-decoration: underline;
+}
 .footer h2 {
   color: white;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", "curasive";
 }
 .footer .footertitle {
   display: flex;

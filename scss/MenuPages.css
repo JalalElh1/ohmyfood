@@ -44,8 +44,8 @@ header {
   margin-bottom: 1px;
   overflow: hidden;
   opacity: 0;
-  min-width: 335px;
-  max-width: 335px;
+  min-width: 100%;
+  max-width: 100%;
 }
 .menucard:nth-child(1) {
   animation-name: disappear;
@@ -202,9 +202,8 @@ main {
 }
 @media only screen and (min-width: 767px) {
   .sectionpage .menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .sectionpage .menu .menuoptions {
@@ -222,10 +221,8 @@ main {
 @media only screen and (min-width: 767px) {
   .sectionpage .menu .menuoptions {
     display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
+    flex-flow: wrap column;
+    width: 60%;
   }
 }
 .sectionpage .menu .menuoptions .menucard {
@@ -249,6 +246,12 @@ main {
   background: white;
   font-family: "Roboto";
 }
+.sectionpage .menu .menuoptions .menucard h3:active,
+.sectionpage .menu .menuoptions .menucard .cardtext:active,
+.sectionpage .menu .menuoptions .menucard .card-ingredients:active,
+.sectionpage .menu .menuoptions .menucard .card-price:active {
+  animation: shrinkWidth 3s forwards;
+}
 .sectionpage .menu .menuoptions .menucard .cardtext {
   width: 100%;
   display: flex;
@@ -260,7 +263,9 @@ main {
 .sectionpage .menu .menuoptions .menucard:hover .cardtick, .sectionpage .menu .menuoptions .menucard:active .cardtick {
   animation: slideLeft 4s ease-in forwards;
 }
-.sectionpage .menu .menuoptions .menucard:hover .cardtext, .sectionpage .menu .menuoptions .menucard:active .cardtext {
+.sectionpage .menu .menuoptions .menucard:hover .cardtext,
+.sectionpage .menu .menuoptions .menucard:hover h3, .sectionpage .menu .menuoptions .menucard:active .cardtext,
+.sectionpage .menu .menuoptions .menucard:active h3 {
   animation: shrinkWidth 2s backwards;
 }
 .sectionpage .menu .menuoptions .menucard .cardtick {

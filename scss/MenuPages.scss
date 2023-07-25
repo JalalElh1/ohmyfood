@@ -67,8 +67,8 @@ header {
   $var: 1;
   overflow: hidden;
   opacity: 0;
-  min-width: 335px;
-  max-width: 335px;
+  min-width: 100%;
+  max-width: 100%;
 
   @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
@@ -163,9 +163,8 @@ main {
     align-items: center;
     justify-content: center;
     @media only screen and (min-width: 767px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      align-items: baseline;
+      display: flex;
+      flex-wrap: wrap;
     }
     .menuoptions {
       display: flex;
@@ -180,10 +179,8 @@ main {
       }
       @media only screen and (min-width: 767px) {
         display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
+        flex-flow: wrap column;
+        width: 60%;
       }
 
       .menucard {
@@ -205,6 +202,9 @@ main {
         .card-price {
           background: white;
           font-family: $font-familyone;
+          &:active {
+            animation: shrinkWidth 3s forwards;
+          }
         }
 
         .cardtext {
@@ -221,7 +221,8 @@ main {
           & .cardtick {
             animation: slideLeft 4s ease-in forwards;
           }
-          & .cardtext {
+          & .cardtext,
+          h3 {
             animation: shrinkWidth 2s backwards;
           }
         }
