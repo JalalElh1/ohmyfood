@@ -300,7 +300,7 @@ header {
   box-shadow: 4px 4px 4px lightgrey;
 }
 .restaurantcards .card:hover {
-  box-shadow: 10px 10px 10px lightgrey;
+  box-shadow: 2px 5px 5px 5px #9356dc;
   cursor: pointer;
 }
 .restaurantcards .card .cardbox {
@@ -412,14 +412,20 @@ header {
   color: white;
   font-family: "Shrikhand", "curasive";
 }
-.footer .footertitle {
+.footer .footercontent {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: start;
+}
+.footer .footercontent .footertitle {
   display: flex;
   color: white;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   width: 60vw;
   justify-content: start;
   text-decoration: none;
-  min-height: 40px;
-  max-height: 40px;
+  min-height: 35px;
+  max-height: 35px;
 }/*# sourceMappingURL=style.css.map */

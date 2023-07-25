@@ -339,7 +339,7 @@ header {
     position: relative;
     box-shadow: 4px 4px 4px lightgrey;
     &:hover {
-      box-shadow: 10px 10px 10px lightgrey;
+      box-shadow: 2px 5px 5px 5px #9356dc;
       cursor: pointer;
     }
 
@@ -455,16 +455,22 @@ header {
     font-family: $font-familytwo;
   }
 
-  .footertitle {
+  .footercontent {
     display: flex;
-    color: white;
-    align-items: center;
-    gap: 16px;
-    width: 60vw;
-    justify-content: start;
-    text-decoration: none;
-    min-height: 40px;
-    max-height: 40px;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: start;
+    .footertitle {
+      display: flex;
+      color: white;
+      align-items: center;
+      gap: 8px;
+      width: 60vw;
+      justify-content: start;
+      text-decoration: none;
+      min-height: 35px;
+      max-height: 35px;
+    }
   }
 }
 
