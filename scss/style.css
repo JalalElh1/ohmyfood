@@ -28,7 +28,7 @@ header .mainlogo span {
   align-items: center;
 }
 
-.loader {
+/*.loader {
   position: fixed;
   left: 45%;
   top: 45%;
@@ -38,8 +38,89 @@ header .mainlogo span {
   animation-timing-function: ease-in-out, linear;
   animation-iteration-count: infinite, 1;
   animation-fill-mode: forwards;
+}*/
+.loader,
+.loader:before,
+.loader:after {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
 }
 
+.loader {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+    filter: #ff79da, #9356dc, #99e2d0 360deg;
+  }
+}
+.loader:before {
+  border: 5px solid #aaa;
+  border-bottom: 15px solid #99e2d0;
+  border-right: 10px solid #9356dc;
+  border-left: 15px solid #ff79da;
+  animation: spin1 1s linear infinite;
+}
+
+/*.loader:after{
+  border:5px solid #aaa;
+  border-bottom:10px solid #9356dc;
+  border-left:10px solid #ff79da;
+  animation:spin2 1s linear infinite;
+}*/
+@keyframes spin1 {
+  20% {
+    transform: rotate(150deg);
+  }
+  40% {
+    transform: rotate(300deg);
+  }
+  80% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin2 {
+  0% {
+    transform: rotate(-30deg);
+  }
+  20% {
+    transform: rotate(-30deg);
+    border-color: transparent transparent #aaa #aaa;
+  }
+  21% {
+    border-color: #9356dc #ff79da transparent transparent;
+  }
+  40% {
+    transform: rotate(-30deg);
+  }
+  60% {
+    transform: rotate(120deg);
+    border-color: #9356dc #ff79da transparent transparent;
+  }
+  61% {
+    border-color: transparent transparent #aaa #aaa;
+  }
+  80% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(330deg);
+  }
+}
 .loader::after {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -49,12 +130,16 @@ header .mainlogo span {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  animation: disapear;
 }
 
+/*.loader::after {
+  @include visuallyHidden;
+}*/
 main,
 footer,
 header {
-  animation: disappear reverse 4s 1;
+  animation: disappear reverse 6s 1;
 }
 
 @keyframes rotate {
