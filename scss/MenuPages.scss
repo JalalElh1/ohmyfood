@@ -76,7 +76,8 @@ header {
       animation-name: disappear;
       animation-direction: reverse;
       animation-fill-mode: forwards;
-      animation-timing-function: 2s ease-in;
+      animation-timing-function: ease-in;
+      animation-duration: 2s;
       animation-delay: #{$var}s;
     }
   }
@@ -216,14 +217,13 @@ main {
           }
         }
 
-        
         &:active {
           & .cardtick {
             animation: slideLeft 4s ease-in forwards;
           }
           & .cardtext,
           h3 {
-            animation: shrinkWidth 2s backwards;
+            animation: shrinkWidth 2s forwards;
           }
         }
 
@@ -241,9 +241,7 @@ main {
 
           i {
             color: white;
-            transform: rotate(360deg);
-            transition-delay: 1s;
-            transition: 0.2s ease-in-out forwards;
+
             font-size: 26px;
           }
         }
@@ -312,13 +310,13 @@ main {
       transform: scale(0.7), translateY(10px);
     }
     75% {
-      transform: scale(1.4), translateY(-10px);
+      transform: scale(1.4) translateY(-10px);
     }
     80% {
-      transform: scale(1), translateY(10px);
+      transform: scale(1) translateY(10px);
     }
     85% {
-      transform: scale(1.2), translateY(20px);
+      transform: scale(1.2) translateY(20px);
     }
     90% {
       transform: translateY(-20px);

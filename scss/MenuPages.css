@@ -51,70 +51,80 @@ header {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: 2s ease-in;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
   animation-delay: 1.25s;
 }
 .menucard:nth-child(2) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: 2s ease-in;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
   animation-delay: 1.5s;
 }
 .menucard:nth-child(3) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: 2s ease-in;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
   animation-delay: 1.75s;
 }
 .menucard:nth-child(4) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: 2s ease-in;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
   animation-delay: 2s;
 }
 .menucard:nth-child(5) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: 2s ease-in;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
   animation-delay: 2.25s;
 }
 .menucard:nth-child(6) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: 2s ease-in;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
   animation-delay: 2.5s;
 }
 .menucard:nth-child(7) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: 2s ease-in;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
   animation-delay: 2.75s;
 }
 .menucard:nth-child(8) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: 2s ease-in;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
   animation-delay: 3s;
 }
 .menucard:nth-child(9) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: 2s ease-in;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
   animation-delay: 3.25s;
 }
 .menucard:nth-child(10) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
-  animation-timing-function: 2s ease-in;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
   animation-delay: 3.5s;
 }
 
@@ -265,7 +275,7 @@ main {
 }
 .sectionpage .menu .menuoptions .menucard:active .cardtext,
 .sectionpage .menu .menuoptions .menucard:active h3 {
-  animation: shrinkWidth 2s backwards;
+  animation: shrinkWidth 2s forwards;
 }
 .sectionpage .menu .menuoptions .menucard .cardtick {
   background: #99e2d0;
@@ -281,9 +291,6 @@ main {
 }
 .sectionpage .menu .menuoptions .menucard .cardtick i {
   color: white;
-  transform: rotate(360deg);
-  transition-delay: 1s;
-  transition: 0.2s ease-in-out forwards;
   font-size: 26px;
 }
 .sectionpage .menu .menuoptions .underline {
@@ -345,13 +352,13 @@ main {
     transform: scale(0.7), translateY(10px);
   }
   75% {
-    transform: scale(1.4), translateY(-10px);
+    transform: scale(1.4) translateY(-10px);
   }
   80% {
-    transform: scale(1), translateY(10px);
+    transform: scale(1) translateY(10px);
   }
   85% {
-    transform: scale(1.2), translateY(20px);
+    transform: scale(1.2) translateY(20px);
   }
   90% {
     transform: translateY(-20px);
