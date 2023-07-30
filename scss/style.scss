@@ -153,9 +153,8 @@ header {
   width: 1px;
 }
 
-.loader::after {
-  @include visuallyHidden;
-  animation: disapear;
+.loader {
+  animation: 3s disappear forwards;
 }
 
 /*.loader::after {
@@ -192,6 +191,7 @@ header {
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 
