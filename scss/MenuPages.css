@@ -191,11 +191,6 @@ main {
   font-family: "Shrikhand";
 }
 @media only screen and (max-width: 767px) {
-  .sectionpage .name h2 {
-    width: 65%;
-  }
-}
-@media only screen and (max-width: 767px) {
   .sectionpage .name {
     width: 95%;
     padding-bottom: 15px;
