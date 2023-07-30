@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
-
-$font-familyone: "Roboto", "sans-serif";
-$font-familytwo: "Shrikhand", "curasive";
-$primary-color: #ff79da;
-$secondary-color: #9356dc;
-$tertiary-color: #99e2d0;
-$maingradient: linear-Gradient(160deg, $primary-color, $secondary-color);
-$mixedcolor: linear-gradient(to right, #ff79da, #9356dc);
+@import "animations.scss";
 
 // --------------------------------------------------------------------------------------------//
 // Body Styling //
@@ -75,13 +68,6 @@ header {
   height: 100px;
   margin: auto;
   animation: spin 4s linear infinite;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-    filter: $primary-color, $secondary-color, $tertiary-color(360deg);
-  }
 }
 
 .loader:before {
@@ -430,7 +416,7 @@ header {
     position: relative;
     box-shadow: 4px 4px 4px lightgrey;
     &:hover {
-      box-shadow: 2px 5px 5px 5px #9356dc;
+      box-shadow: 2px 5px 5px 5px #aaa;
       cursor: pointer;
     }
 

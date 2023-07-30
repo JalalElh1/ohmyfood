@@ -1,0 +1,16 @@
+$font-familyone: "Roboto", "sans-serif";
+$font-familytwo: "Shrikhand", "curasive";
+$primary-color: #ff79da;
+$secondary-color: #9356dc;
+$tertiary-color: #99e2d0;
+$maingradient: linear-Gradient(160deg, $primary-color, $secondary-color);
+$mixedcolor: linear-gradient(to right, #ff79da, #9356dc);
+@keyframes spin {
+  0% {
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

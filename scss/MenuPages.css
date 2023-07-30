@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@keyframes spin {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 * {
   margin: 0;
 }
@@ -154,7 +162,7 @@ header {
     width: 100%;
   }
   to {
-    width: 75%;
+    width: 85%;
   }
 }
 main {
@@ -271,11 +279,15 @@ main {
   padding-right: 15px;
 }
 .sectionpage .menu .menuoptions .menucard:active .cardtick {
-  animation: slideLeft 4s ease-in forwards;
+  animation: slideLeft 2s reverse ease-in forwards;
 }
 .sectionpage .menu .menuoptions .menucard:active .cardtext,
 .sectionpage .menu .menuoptions .menucard:active h3 {
   animation: shrinkWidth 2s forwards;
+}
+.sectionpage .menu .menuoptions .menucard:active i {
+  animation: spin 3s forwards;
+  animation-delay: 1s;
 }
 .sectionpage .menu .menuoptions .menucard .cardtick {
   background: #99e2d0;
@@ -286,7 +298,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 65px;
+  width: 15%;
   min-height: 90px;
 }
 .sectionpage .menu .menuoptions .menucard .cardtick i {
