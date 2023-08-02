@@ -299,7 +299,7 @@ main {
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: fillUp 0.7s drop;
+      animation: fillUp 0.7s;
     }
   }
 
@@ -308,7 +308,7 @@ main {
       transform: scale(0);
     }
     50% {
-      transform: scale(0.7), translateY(10px);
+      transform: scale(0.7) translateY(10px);
     }
     75% {
       transform: scale(1.4) translateY(-10px);

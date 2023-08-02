@@ -39,17 +39,7 @@ header {
 
 // --------------------------- //
 //Loader for screen //
-/*.loader {
-  position: fixed;
-  left: 45%;
-  top: 45%;
-  font-size: 70px;
-  animation-name: rotate, disappear;
-  animation-duration: 1s, 3s;
-  animation-timing-function: ease-in-out, linear;
-  animation-iteration-count: infinite, 1;
-  animation-fill-mode: forwards;
-}*/
+
 .loader,
 .loader:before,
 .loader:after {
@@ -77,13 +67,6 @@ header {
   border-left: 15px solid #ff79da;
   animation: spin1 1s linear infinite;
 }
-
-/*.loader:after{
-  border:5px solid #aaa;
-  border-bottom:10px solid #9356dc;
-  border-left:10px solid #ff79da;
-  animation:spin2 1s linear infinite;
-}*/
 
 @keyframes spin1 {
   20% {
@@ -142,10 +125,6 @@ header {
 .loader {
   animation: 3s disappear forwards;
 }
-
-/*.loader::after {
-  @include visuallyHidden;
-}*/
 
 main,
 footer,
@@ -280,7 +259,7 @@ header {
     transform: scale(1.4);
   }
   80% {
-    transform: scale(1), translateY(-10px);
+    transform: scale(1) translateY(-10px);
   }
   85% {
     transform: translateY(20px);
@@ -292,15 +271,6 @@ header {
     transform: translateY(0);
   }
 }
-
-/*.heart-svg {
-  fill: transparent;
-  stroke: black;
-  stroke-width: 50;
-   border: 1px solid black;
-  &:active {
-    fill: $maingradient;
-  } */
 
 .xplor-bttn {
   color: white;
@@ -551,9 +521,4 @@ header {
   }
 }
 
-// --------------------------------------------------------------------------------------------//
-// --------------------------------------------------------------------------------------------//
-// MENU PAGES//
-
-// --------------------------------------------------------------------------------------------//
 // --------------------------------------------------------------------------------------------//
