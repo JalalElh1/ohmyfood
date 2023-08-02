@@ -5,9 +5,7 @@ Repository for a food ordering static website with HTML, SASS with cool animatio
 In this project I had been given an outline of what need to be included. 
 To be included are;
 
-● Homepage
-4x Menu Page ( For each restaurant)
- Header & Footer same as all pages. 
+● Homepage, 4x Menu Page ( For each restaurant), Header & Footer same as all pages. 
 
 As instructed for the effects on the pages, there are to be no javascript or CSS library used to creation animations or transitions. 
 For the pages the instructions as set in the brief are as follows:
