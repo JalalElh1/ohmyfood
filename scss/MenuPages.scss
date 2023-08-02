@@ -214,6 +214,22 @@ main {
           }
         }
 
+        @media only screen and (min-width: 767px) {
+          &:hover {
+            & .cardtick {
+              animation: slideLeft 2s reverse ease-in forwards;
+            }
+            & .cardtext,
+            h3 {
+              animation: shrinkWidth 2s forwards;
+            }
+            & i {
+              animation: spin 1.5s forwards;
+              animation-delay: 0.7s;
+            }
+          }
+        }
+
         &:active {
           & .cardtick {
             animation: slideLeft 2s reverse ease-in forwards;

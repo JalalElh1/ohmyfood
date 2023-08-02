@@ -256,6 +256,7 @@ header {
   padding-bottom: 32px;
   background: white;
   padding-left: 20px;
+  cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
   .directions {
