@@ -72,12 +72,12 @@ header {
 
   @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
-      $var: $var + 0.25;
+      $var: $var + 0.15;
       animation-name: disappear;
       animation-direction: reverse;
       animation-fill-mode: forwards;
       animation-timing-function: ease-in;
-      animation-duration: 2s;
+      animation-duration: 1s;
       animation-delay: #{$var}s;
     }
   }
@@ -223,8 +223,8 @@ main {
             animation: shrinkWidth 2s forwards;
           }
           & i {
-            animation: spin 3s forwards;
-            animation-delay: 1s;
+            animation: spin 1.5s forwards;
+            animation-delay: 0.7s;
           }
         }
 
