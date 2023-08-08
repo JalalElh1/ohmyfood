@@ -7,7 +7,7 @@ $maingradient: linear-Gradient(160deg, $primary-color, $secondary-color);
 $mixedcolor: linear-gradient(to right, #ff79da, #9356dc);
 @keyframes spin {
   0% {
-    transform: rotate(-90deg);
+    transform: rotate(360deg);
   }
 
   100% {

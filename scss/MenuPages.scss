@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 @import "animations.scss";
-$primary-color: #9356dc;
-$secondary-color: #ff79da;
-$tertiary-color: #99e2d0;
-$background: #f6f6f6;
-$font-familyone: "Roboto";
-$font-familytwo: "Shrikhand";
-$maingradient: linear-Gradient(160deg, $secondary-color, $primary-color);
 
 // --------------------------------------------------------------------------------------------//
 // Body Styling //
@@ -163,6 +156,7 @@ main {
     @media only screen and (min-width: 767px) {
       display: flex;
       flex-wrap: wrap;
+      align-items: baseline;
     }
     .menuoptions {
       display: flex;
@@ -194,6 +188,7 @@ main {
         max-height: 75px;
         justify-content: space-around;
         padding-left: 10px;
+
         h3,
         .cardtext,
         .card-ingredients,
@@ -201,7 +196,7 @@ main {
           background: white;
           font-family: $font-familyone;
           &:active {
-            animation: shrinkWidth 3s forwards;
+            animation: shrinkWidth 2s forwards;
           }
         }
 
@@ -217,30 +212,30 @@ main {
         @media only screen and (min-width: 767px) {
           &:hover {
             & .cardtick {
-              animation: slideLeft 2s reverse ease-in forwards;
+              animation: slideLeft 1s reverse ease-in forwards;
             }
             & .cardtext,
             h3 {
-              animation: shrinkWidth 2s forwards;
+              animation: shrinkWidth 1s forwards;
             }
             & i {
-              animation: spin 1.5s forwards;
-              animation-delay: 0.7s;
+              animation: spin 1s forwards;
+              animation-delay: 0.3s;
             }
           }
         }
 
         &:active {
           & .cardtick {
-            animation: slideLeft 2s reverse ease-in forwards;
+            animation: slideLeft 1s reverse ease-in forwards;
           }
           & .cardtext,
           h3 {
-            animation: shrinkWidth 2s forwards;
+            animation: shrinkWidth 1.5s forwards;
           }
           & i {
             animation: spin 1.5s forwards;
-            animation-delay: 0.7s;
+            animation-delay: 0.5s;
           }
         }
 
@@ -253,7 +248,7 @@ main {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 15%;
+          width: 16%;
           min-height: 90px;
 
           i {
@@ -271,6 +266,7 @@ main {
         bottom: 27px;
         color: #99e2d0;
         z-index: 0;
+        font-weight: 900;
       }
     }
   }

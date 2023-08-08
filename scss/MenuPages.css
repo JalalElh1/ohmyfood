@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 @keyframes spin {
   0% {
-    transform: rotate(-90deg);
+    transform: rotate(360deg);
   }
   100% {
     transform: rotate(0deg);
@@ -11,7 +11,7 @@
   margin: 0;
 }
 * p {
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
 }
 
 .header {
@@ -188,7 +188,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", "curasive";
 }
 @media only screen and (max-width: 767px) {
   .sectionpage .name {
@@ -217,6 +217,7 @@ main {
   .sectionpage .menu {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
   }
 }
 .sectionpage .menu .menuoptions {
@@ -229,7 +230,7 @@ main {
 .sectionpage .menu .menuoptions h3 {
   position: relative;
   z-index: 1;
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
 }
 @media only screen and (min-width: 767px) {
   .sectionpage .menu .menuoptions {
@@ -257,13 +258,13 @@ main {
 .sectionpage .menu .menuoptions .menucard .card-ingredients,
 .sectionpage .menu .menuoptions .menucard .card-price {
   background: white;
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
 }
 .sectionpage .menu .menuoptions .menucard h3:active,
 .sectionpage .menu .menuoptions .menucard .cardtext:active,
 .sectionpage .menu .menuoptions .menucard .card-ingredients:active,
 .sectionpage .menu .menuoptions .menucard .card-price:active {
-  animation: shrinkWidth 3s forwards;
+  animation: shrinkWidth 2s forwards;
 }
 .sectionpage .menu .menuoptions .menucard .cardtext {
   width: 100%;
@@ -275,27 +276,27 @@ main {
 }
 @media only screen and (min-width: 767px) {
   .sectionpage .menu .menuoptions .menucard:hover .cardtick {
-    animation: slideLeft 2s reverse ease-in forwards;
+    animation: slideLeft 1s reverse ease-in forwards;
   }
   .sectionpage .menu .menuoptions .menucard:hover .cardtext,
   .sectionpage .menu .menuoptions .menucard:hover h3 {
-    animation: shrinkWidth 2s forwards;
+    animation: shrinkWidth 1s forwards;
   }
   .sectionpage .menu .menuoptions .menucard:hover i {
-    animation: spin 1.5s forwards;
-    animation-delay: 0.7s;
+    animation: spin 1s forwards;
+    animation-delay: 0.3s;
   }
 }
 .sectionpage .menu .menuoptions .menucard:active .cardtick {
-  animation: slideLeft 2s reverse ease-in forwards;
+  animation: slideLeft 1s reverse ease-in forwards;
 }
 .sectionpage .menu .menuoptions .menucard:active .cardtext,
 .sectionpage .menu .menuoptions .menucard:active h3 {
-  animation: shrinkWidth 2s forwards;
+  animation: shrinkWidth 1.5s forwards;
 }
 .sectionpage .menu .menuoptions .menucard:active i {
   animation: spin 1.5s forwards;
-  animation-delay: 0.7s;
+  animation-delay: 0.5s;
 }
 .sectionpage .menu .menuoptions .menucard .cardtick {
   background: #99e2d0;
@@ -306,7 +307,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 16%;
   min-height: 90px;
 }
 .sectionpage .menu .menuoptions .menucard .cardtick i {
@@ -321,6 +322,7 @@ main {
   bottom: 27px;
   color: #99e2d0;
   z-index: 0;
+  font-weight: 900;
 }
 .sectionpage .orderbttn {
   display: flex;

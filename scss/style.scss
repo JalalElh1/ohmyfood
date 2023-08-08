@@ -126,11 +126,11 @@ header {
   animation: 3s disappear forwards;
 }
 
-main,
+/*main,
 footer,
 header {
   animation: disappear reverse 6s 1;
-}
+}*/
 
 @keyframes rotate {
   from {
@@ -181,6 +181,10 @@ header {
     align-items: center;
   }
 
+  h2 {
+    font-family: "Roboto";
+  }
+
   .fa-solid {
     font-size: 20px;
   }
@@ -203,6 +207,7 @@ header {
     align-items: center;
     padding-bottom: 32px;
     font-family: $font-familyone;
+    width: 50%;
 
     @media only screen and (max-width: 767px) {
       min-height: 250px;
@@ -212,7 +217,7 @@ header {
       p {
         display: block;
         box-sizing: border-box;
-        width: 70%;
+        width: 75%;
         text-align: center;
       }
     }
@@ -292,6 +297,7 @@ header {
   }
   @media only screen and (min-width: 767px) {
     background: linear-gradient(white, #eaeaea);
+    width: 43%;
   }
   h2 {
     padding-top: 20px;
@@ -312,7 +318,7 @@ header {
     flex-direction: row;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 40vw;
+    width: 30vw;
     border-radius: 30px;
     font-size: large;
     background: #f6f6f6;
@@ -325,16 +331,20 @@ header {
     }
 
     @media only screen and (max-width: 767px) {
-      width: 90%;
+      width: 100%;
       max-width: 95%;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      width: 105%;
     }
 
     .stepnumber {
       display: flex;
       align-items: center;
       background: $secondary-color;
-      width: 39px;
-      height: 39px;
+      width: 29px;
+      height: 29px;
       justify-content: center;
       position: relative;
       border-radius: 50%;
@@ -344,11 +354,16 @@ header {
     span {
       display: flex;
       gap: 20px;
+      padding-left: 10px;
       align-items: center;
       justify-content: start;
       width: 100%;
       font-family: $font-familyone;
       font-weight: 500;
+
+      .fa-solid {
+        color: grey;
+      }
     }
   }
 }
