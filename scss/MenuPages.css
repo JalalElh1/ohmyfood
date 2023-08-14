@@ -270,6 +270,7 @@ main {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding-right: 16px;
 }
 .sectionpage .menu .menuoptions .menucard .cardtext {
   width: 100%;
