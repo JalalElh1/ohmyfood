@@ -195,9 +195,15 @@ main {
         .card-price {
           background: white;
           font-family: $font-familyone;
+
           &:active {
             animation: shrinkWidth 2s forwards;
           }
+        }
+        .card-ingredients {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
         }
 
         .cardtext {
@@ -231,6 +237,7 @@ main {
           }
           & .cardtext,
           h3 {
+            overflow: hidden;
             animation: shrinkWidth 1.5s forwards;
           }
           & i {

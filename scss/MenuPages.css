@@ -266,6 +266,11 @@ main {
 .sectionpage .menu .menuoptions .menucard .card-price:active {
   animation: shrinkWidth 2s forwards;
 }
+.sectionpage .menu .menuoptions .menucard .card-ingredients {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .sectionpage .menu .menuoptions .menucard .cardtext {
   width: 100%;
   display: flex;
@@ -292,6 +297,7 @@ main {
 }
 .sectionpage .menu .menuoptions .menucard:active .cardtext,
 .sectionpage .menu .menuoptions .menucard:active h3 {
+  overflow: hidden;
   animation: shrinkWidth 1.5s forwards;
 }
 .sectionpage .menu .menuoptions .menucard:active i {
