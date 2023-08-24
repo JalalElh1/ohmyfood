@@ -235,11 +235,11 @@ header {
   border-radius: 30px;
   display: flex;
   height: 48px;
-  min-width: 240px;
-  max-width: 240px;
+  min-width: 275px;
+  max-width: 275px;
 }
 .firstsection .searchbar_button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
   color: #fff;
   text-decoration: none;
   cursor: pointer;

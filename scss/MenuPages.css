@@ -25,10 +25,15 @@
   flex-flow: wrap row;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  position: relative;
+}
+.header .mainlogo i {
+  position: absolute;
+  left: 0;
 }
 .header .mainlogo .span {
   position: relative;
-  left: 70px;
 }
 .header .mainlogo a {
   position: relative;
@@ -37,10 +42,6 @@
   justify-content: center;
   align-items: center;
 }
-.header .mainlogo a i {
-  position: relative;
-  right: 60px;
-}
 
 main,
 footer,
@@ -48,30 +49,10 @@ header {
   animation: none;
 }
 
-.menucard {
-  margin-bottom: 1px;
-  overflow: hidden;
+.menuoptions {
   opacity: 0;
-  min-width: 100%;
-  max-width: 100%;
 }
-.menucard:nth-child(1) {
-  animation-name: disappear;
-  animation-direction: reverse;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-  animation-delay: 1.15s;
-}
-.menucard:nth-child(2) {
-  animation-name: disappear;
-  animation-direction: reverse;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-  animation-delay: 1.3s;
-}
-.menucard:nth-child(3) {
+.menuoptions:nth-child(1) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
@@ -79,23 +60,7 @@ header {
   animation-duration: 1s;
   animation-delay: 1.45s;
 }
-.menucard:nth-child(4) {
-  animation-name: disappear;
-  animation-direction: reverse;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-  animation-delay: 1.6s;
-}
-.menucard:nth-child(5) {
-  animation-name: disappear;
-  animation-direction: reverse;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-  animation-delay: 1.75s;
-}
-.menucard:nth-child(6) {
+.menuoptions:nth-child(2) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
@@ -103,23 +68,7 @@ header {
   animation-duration: 1s;
   animation-delay: 1.9s;
 }
-.menucard:nth-child(7) {
-  animation-name: disappear;
-  animation-direction: reverse;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-  animation-delay: 2.05s;
-}
-.menucard:nth-child(8) {
-  animation-name: disappear;
-  animation-direction: reverse;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-  animation-delay: 2.2s;
-}
-.menucard:nth-child(9) {
+.menuoptions:nth-child(3) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
@@ -127,13 +76,21 @@ header {
   animation-duration: 1s;
   animation-delay: 2.35s;
 }
-.menucard:nth-child(10) {
+.menuoptions:nth-child(4) {
   animation-name: disappear;
   animation-direction: reverse;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
   animation-duration: 1s;
-  animation-delay: 2.5s;
+  animation-delay: 2.8s;
+}
+
+.menucard {
+  margin-bottom: 1px;
+  overflow: hidden;
+  opacity: 1;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .restaurantpic {
@@ -141,6 +98,7 @@ header {
   z-index: 0;
   height: 45vh;
   width: 100%;
+  max-height: 300px;
 }
 .restaurantpic img {
   width: 100%;
@@ -341,26 +299,28 @@ main {
   width: 100%;
 }
 .sectionpage .orderbttn .Orderbtn {
+  background-image: linear-gradient(to right, #9356dc 0%, #ff79da 51%, #9356dc 100%);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
   display: flex;
   flex-wrap: wrap;
-  color: white;
   font-size: large;
   border: 0;
   border-radius: 30px;
   box-shadow: 5px 5px 3px lightgrey;
-  background: linear-Gradient(#ff79da, #9356dc);
   height: 48px;
-  align-items: center;
-  justify-content: center;
   min-width: 240px;
   max-width: 240px;
 }
 .sectionpage .orderbttn .Orderbtn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
-  transform: scale(1.1);
-}
-.sectionpage .orderbttn .Orderbtn .materialicon {
-  color: white;
 }
 .sectionpage .heart-items i {
   transition: opacity 1s ease-in-out;

@@ -26,10 +26,15 @@
     flex-flow: wrap row;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: relative;
+    i {
+      position: absolute;
+      left: 0;
+    }
 
     .span {
       position: relative;
-      left: 70px;
     }
     a {
       position: relative;
@@ -37,11 +42,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
-      i {
-        position: relative;
-        right: 60px;
-      }
     }
   }
 }
@@ -55,17 +55,12 @@ header {
   animation: none;
 }
 
-.menucard {
-  margin-bottom: 1px;
-  $var: 1;
-  overflow: hidden;
+.menuoptions {
   opacity: 0;
-  min-width: 100%;
-  max-width: 100%;
-
-  @for $i from 1 through 10 {
+  $var: 1;
+  @for $i from 1 through 4 {
     &:nth-child(#{$i}) {
-      $var: $var + 0.15;
+      $var: $var + 0.45;
       animation-name: disappear;
       animation-direction: reverse;
       animation-fill-mode: forwards;
@@ -76,11 +71,21 @@ header {
   }
 }
 
+.menucard {
+  margin-bottom: 1px;
+  $var: 1;
+  overflow: hidden;
+  opacity: 1;
+  min-width: 100%;
+  max-width: 100%;
+}
+
 .restaurantpic {
   position: absolute;
   z-index: 0;
   height: 45vh;
   width: 100%;
+  max-height: 300px;
 
   img {
     width: 100%;
@@ -288,33 +293,41 @@ main {
     max-height: 150px;
     width: 100%;
     .Orderbtn {
+      background-image: linear-gradient(
+        to right,
+        #9356dc 0%,
+        #ff79da 51%,
+        #9356dc 100%
+      );
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
       display: flex;
       flex-wrap: wrap;
-      color: white;
+
       font-size: large;
       border: 0;
       border-radius: 30px;
       box-shadow: 5px 5px 3px lightgrey;
-      background: $maingradient;
       height: 48px;
-      align-items: center;
-      justify-content: center;
       min-width: 240px;
       max-width: 240px;
 
       &:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
         cursor: pointer;
-        transform: scale(1.1);
-      }
-      .materialicon {
-        color: white;
       }
     }
   }
   .heart-items i {
     transition: opacity 1s ease-in-out;
   }
-  
+
   .heart-fill {
     background: $mixedcolor;
     background-clip: text;
@@ -322,7 +335,7 @@ main {
     -webkit-text-fill-color: transparent;
     opacity: 0;
   }
-  
+
   .heart-fill:hover {
     opacity: 1;
   }
