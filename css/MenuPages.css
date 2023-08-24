@@ -30,17 +30,23 @@
 }
 .header .mainlogo i {
   position: absolute;
-  left: 0;
+  left: -50px;
 }
 .header .mainlogo .span {
   position: relative;
 }
 .header .mainlogo a {
-  position: relative;
-  left: -5px;
+  position: absolute;
+  left: 8%;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  .header .mainlogo a {
+    left: 13%;
+  }
 }
 
 main,
@@ -96,7 +102,7 @@ header {
 .restaurantpic {
   position: absolute;
   z-index: 0;
-  height: 45vh;
+  height: 50%;
   width: 100%;
   max-height: 300px;
 }

@@ -14,12 +14,5 @@ $mixedcolor: linear-gradient(#ff79da, #9356dc);
     transform: rotate(0deg);
   }
 }
-@mixin card_appear {
-  & .card {
-    animation-name: appear;
-    animation-duration: 1000ms;
-    animation-fill-mode: backwards;
-  }
-}
 
 
