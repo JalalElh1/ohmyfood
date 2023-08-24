@@ -40,7 +40,7 @@
 
       i {
         position: relative;
-        right: 40px;
+        right: 60px;
       }
     }
   }
@@ -311,16 +311,20 @@ main {
       }
     }
   }
-  .heartcolor {
-    font-weight: 100;
-    &:active {
-      font-weight: 900;
-      background-image: $maingradient;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: fillUp 0.7s;
-    }
+  .heart-items i {
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .heart-fill {
+    background: $mixedcolor;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+  }
+  
+  .heart-fill:hover {
+    opacity: 1;
   }
 
   @keyframes fillUp {

@@ -39,7 +39,7 @@
 }
 .header .mainlogo a i {
   position: relative;
-  right: 40px;
+  right: 60px;
 }
 
 main,
@@ -348,7 +348,7 @@ main {
   border: 0;
   border-radius: 30px;
   box-shadow: 5px 5px 3px lightgrey;
-  background: linear-Gradient(160deg, #ff79da, #9356dc);
+  background: linear-Gradient(#ff79da, #9356dc);
   height: 48px;
   align-items: center;
   justify-content: center;
@@ -362,16 +362,18 @@ main {
 .sectionpage .orderbttn .Orderbtn .materialicon {
   color: white;
 }
-.sectionpage .heartcolor {
-  font-weight: 100;
+.sectionpage .heart-items i {
+  transition: opacity 1s ease-in-out;
 }
-.sectionpage .heartcolor:active {
-  font-weight: 900;
-  background-image: linear-Gradient(160deg, #ff79da, #9356dc);
-  -webkit-background-clip: text;
+.sectionpage .heart-fill {
+  background: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fillUp 0.7s;
+  opacity: 0;
+}
+.sectionpage .heart-fill:hover {
+  opacity: 1;
 }
 @keyframes fillUp {
   0% {

@@ -29,6 +29,8 @@ header {
     justify-content: center;
     flex-direction: row;
     gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     span {
       display: flex;
@@ -173,6 +175,7 @@ header {
   background-color: #eaeaea;
   font-size: 12px;
   gap: 16px;
+  box-shadow: 0px 2px 2px 4px rgba(0.2, 0.2, 0.2, 0.2);
 
   @media only screen and (max-width: 767px) {
     min-height: 60px;
@@ -222,14 +225,42 @@ header {
       }
     }
   }
-
   .searchbar_button {
+    background-image: linear-gradient(
+      to right,
+      #9356dc 0%,
+      #ff79da 51%,
+      #9356dc 100%
+    );
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0px 3px 3px 3px lightgrey;
+    border-radius: 30px;
+    display: flex;
+    height: 48px;
+    min-width: 240px;
+    max-width: 240px;
+  }
+
+  .searchbar_button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*.searchbar_button {
     display: flex;
     flex-wrap: wrap;
     font-size: large;
     border: 0;
     border-radius: 30px;
-    box-shadow: 5px 5px 3px lightgrey;
+    box-shadow: 0px 3px 3px 3px lightgrey;
     background: $mixedcolor;
     height: 48px;
     align-items: center;
@@ -240,11 +271,30 @@ header {
     &:hover {
       box-shadow: 15px 15px 15px lightgrey;
       cursor: pointer;
+      background-position: right center;
+      color: #fff;
+      text-decoration: none;
+      scale: 1.1;
     }
-  }
+  }*/
 }
 
-.heartcolor {
+.heart-items i {
+  transition: opacity 1s ease-in-out;
+}
+
+.heart-fill {
+  background: $mixedcolor;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.heart-fill:hover {
+  opacity: 1;
+}
+
+/*.heartcolor {
   font-weight: 100;
   &:active {
     font-weight: 900;
@@ -275,7 +325,7 @@ header {
   100% {
     transform: translateY(0);
   }
-}
+}*/
 
 .xplor-bttn {
   color: white;
@@ -302,13 +352,10 @@ header {
   h2 {
     padding-top: 20px;
   }
-
-  .directionbutton {
-    span:hover {
-      .fa-solid {
-        color: #9356dc;
-        transform: scale(1.3);
-      }
+  .directionbutton:hover {
+    .fa-solid {
+      color: #9356dc;
+      transform: scale(1.3);
     }
   }
 

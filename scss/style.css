@@ -30,6 +30,8 @@ header .mainlogo {
   justify-content: center;
   flex-direction: row;
   gap: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 header .mainlogo span {
   display: flex;
@@ -151,6 +153,7 @@ header {
   background-color: #eaeaea;
   font-size: 12px;
   gap: 16px;
+  box-shadow: 0px 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 767px) {
   .location {
@@ -172,6 +175,29 @@ header {
   flex-flow: wrap row;
   background: linear-gradient(white, #eaeaea);
   justify-content: space-evenly;
+  /*.searchbar_button {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 0px 3px 3px 3px lightgrey;
+    background: $mixedcolor;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    min-width: 240px;
+    max-width: 240px;
+
+    &:hover {
+      box-shadow: 15px 15px 15px lightgrey;
+      cursor: pointer;
+      background-position: right center;
+      color: #fff;
+      text-decoration: none;
+      scale: 1.1;
+    }
+  }*/
 }
 .firstsection .intro {
   display: flex;
@@ -197,34 +223,54 @@ header {
   }
 }
 .firstsection .searchbar_button {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: large;
-  border: 0;
-  border-radius: 30px;
-  box-shadow: 5px 5px 3px lightgrey;
-  background: linear-gradient(to right, #ff79da, #9356dc);
-  height: 48px;
-  align-items: center;
+  background-image: linear-gradient(to right, #9356dc 0%, #ff79da 51%, #9356dc 100%);
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0px 3px 3px 3px lightgrey;
+  border-radius: 30px;
+  display: flex;
+  height: 48px;
   min-width: 240px;
   max-width: 240px;
 }
 .firstsection .searchbar_button:hover {
-  box-shadow: 15px 15px 15px lightgrey;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.heartcolor {
-  font-weight: 100;
+.heart-items i {
+  transition: opacity 1s ease-in-out;
 }
-.heartcolor:active {
-  font-weight: 900;
-  background-image: linear-Gradient(160deg, #ff79da, #9356dc);
+
+.heart-fill {
+  background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fillUp 1s ease-in forwards;
+  opacity: 0;
+}
+
+.heart-fill:hover {
+  opacity: 1;
+}
+
+/*.heartcolor {
+  font-weight: 100;
+  &:active {
+    font-weight: 900;
+    background-image: $maingradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fillUp 1s ease-in forwards;
+  }
 }
 
 @keyframes fillUp {
@@ -246,7 +292,7 @@ header {
   100% {
     transform: translateY(0);
   }
-}
+}*/
 .xplor-bttn {
   color: white;
 }
@@ -276,7 +322,7 @@ header {
 .directions h2 {
   padding-top: 20px;
 }
-.directions .directionbutton span:hover .fa-solid {
+.directions .directionbutton:hover .fa-solid {
   color: #9356dc;
   transform: scale(1.3);
 }

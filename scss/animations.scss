@@ -3,8 +3,8 @@ $font-familytwo: "Shrikhand", "curasive";
 $primary-color: #ff79da;
 $secondary-color: #9356dc;
 $tertiary-color: #99e2d0;
-$maingradient: linear-Gradient(160deg, $primary-color, $secondary-color);
-$mixedcolor: linear-gradient(to right, #ff79da, #9356dc);
+$maingradient: linear-Gradient($primary-color, $secondary-color);
+$mixedcolor: linear-gradient(#ff79da, #9356dc);
 @keyframes spin {
   0% {
     transform: rotate(360deg);
@@ -14,3 +14,12 @@ $mixedcolor: linear-gradient(to right, #ff79da, #9356dc);
     transform: rotate(0deg);
   }
 }
+@mixin card_appear {
+  & .card {
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-fill-mode: backwards;
+  }
+}
+
+
